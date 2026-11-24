@@ -1,0 +1,19 @@
+# Public Manhattan office leases filed as exhibits with the SEC (EDGAR).
+# The page labels them by building type and year; the source links name the filings.
+leases:
+  - id: midtown-2013
+    label: Midtown office tower, part floor, 2013
+    filed: 2021-07-16
+    url: https://www.sec.gov/Archives/edgar/data/1844280/000119312521217566/d162335dex1011.htm
+  - id: garment-2023
+    label: Garment District office building, full floor, 2023
+    filed: 2023-11-02
+    url: https://www.sec.gov/Archives/edgar/data/1816590/000162828023036170/ex-102xleaseagreementbetwe.htm
+  - id: manhattan-2021
+    label: Manhattan office lease, 2021 (parts redacted)
+    filed: 2021-12-10
+    url: https://www.sec.gov/Archives/edgar/data/1734722/000173472221000023/path-20211031xex101.htm
+  - id: parkavesouth-2020
+    label: Park Avenue South office building, 2020 (parts redacted)
+    filed: 2021-03-11
+    url: https://www.sec.gov/Archives/edgar/data/1359931/000121390021014709/f10k2020ex10-25_protara.htm

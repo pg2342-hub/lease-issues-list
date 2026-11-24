@@ -1,0 +1,202 @@
+# Sample landlord playbook for a Manhattan office lease.
+# Written for this demo from terms that commonly appear in New York office leases.
+# It is not any firm's playbook and it is not legal advice. A firm replaces it with its own positions.
+name: Landlord standard positions, Manhattan office lease (sample)
+side: landlord
+positions:
+  - id: assignment
+    topic: Assignment and subletting
+    severity: critical
+    standard: >-
+      Tenant may not assign the lease or sublet any part of the premises without Landlord's prior
+      written consent. Before consenting, Landlord may take back (recapture) the space. If Tenant
+      sublets or assigns for more than it pays, Landlord receives at least half of the profit.
+    departs_if: >-
+      Consent cannot be unreasonably withheld with no recapture right, Landlord gets less than half
+      of transfer profit or none, or Tenant may transfer to affiliates or buyers without consent
+      beyond a narrow, defined exception.
+    response: >-
+      Restore Landlord's recapture right and the 50 percent share of transfer profit, and limit
+      consent-free transfers to a merger or affiliate transfer with a net worth test.
+
+  - id: use
+    topic: Permitted use
+    severity: major
+    standard: >-
+      The premises are used only for general, executive and administrative offices, with no change
+      of use without Landlord's consent.
+    departs_if: >-
+      The lease allows uses beyond general office (labs, retail, public assembly, food preparation)
+      or allows any lawful use.
+    response: >-
+      Limit use to general, executive and administrative offices; list any other use the tenant
+      needs as a specific, approved exception.
+
+  - id: alterations
+    topic: Alterations
+    severity: major
+    standard: >-
+      Tenant needs Landlord's prior consent for all alterations except purely decorative work
+      (painting, carpeting), uses contractors Landlord approves, and pays Landlord's reasonable
+      review costs.
+    departs_if: >-
+      Tenant may make non-structural alterations without consent above a low threshold, or
+      Landlord's consent cannot be withheld except for structural or building-system work.
+    response: >-
+      Require consent for all non-decorative alterations; if a consent-free category is kept, cap
+      it at a small cost per project and exclude anything touching building systems or structure.
+
+  - id: restoration
+    topic: Surrender and restoration
+    severity: major
+    standard: >-
+      At the end of the term Tenant removes its specialty alterations (for example vaults,
+      raised floors, internal staircases, supplemental HVAC) and repairs the damage at its cost.
+    departs_if: >-
+      Tenant has no removal obligation, or removal applies only to items Landlord designates at the
+      time of consent and Landlord failed to designate them.
+    response: >-
+      Require removal of specialty alterations at Tenant's cost, whether or not Landlord designated
+      them at the time of consent.
+
+  - id: operating_expenses
+    topic: Operating expense escalations
+    severity: critical
+    standard: >-
+      Tenant pays its proportionate share of increases in operating expenses over a base year,
+      with no cap on controllable expenses.
+    departs_if: >-
+      Increases are capped (a fixed percentage per year on all or controllable expenses), the base
+      year is grossed up in Tenant's favor without the same for comparison years, or Tenant pays no
+      operating expense escalation.
+    response: >-
+      Remove the cap, or limit it to controllable expenses at no less than 5 percent per year on a
+      non-cumulative basis.
+
+  - id: taxes
+    topic: Real estate tax escalations
+    severity: major
+    standard: >-
+      Tenant pays its proportionate share of increases in real estate taxes over a base tax year.
+    departs_if: >-
+      Tenant pays no tax escalation, or the base tax year is reset or reduced in a way that shifts
+      tax increases to Landlord.
+    response: >-
+      Keep Tenant's proportionate share of tax increases over the base tax year, without
+      reductions for later abatements that benefit only Landlord.
+
+  - id: security_deposit
+    topic: Security deposit
+    severity: critical
+    standard: >-
+      Tenant posts cash or an unconditional letter of credit, Landlord may draw on it after a
+      default, and any reduction (burn-down) applies only if Tenant has never been in default.
+    departs_if: >-
+      There is no security deposit, the deposit reduces regardless of Tenant's payment history, or
+      Landlord's right to draw is limited beyond a default after notice.
+    response: >-
+      Require the letter of credit, and make each reduction conditional on no default having
+      occurred.
+
+  - id: insurance
+    topic: Tenant's insurance
+    severity: major
+    standard: >-
+      Tenant carries commercial general liability insurance of at least 5 million dollars per
+      occurrence (primary plus umbrella), names Landlord and its managing agent as additional
+      insureds, and both parties waive subrogation.
+    departs_if: >-
+      Liability limits are below 5 million dollars, Landlord is not an additional insured, or the
+      waiver of subrogation runs only in Tenant's favor.
+    response: >-
+      Raise the liability limits, add Landlord and its managing agent as additional insureds, and
+      make the waiver of subrogation mutual.
+
+  - id: indemnity
+    topic: Indemnification
+    severity: major
+    standard: >-
+      Tenant indemnifies Landlord for claims arising from Tenant's use of the premises and its
+      people. Landlord's indemnity, if any, covers only its negligence or willful misconduct.
+    departs_if: >-
+      Landlord gives a broad indemnity (for example for any act in the building), or Tenant's
+      indemnity is limited to its gross negligence.
+    response: >-
+      Keep Tenant's indemnity for its use of the premises and limit any Landlord indemnity to
+      Landlord's negligence or willful misconduct.
+
+  - id: landlord_liability
+    topic: Limit on Landlord's liability
+    severity: critical
+    standard: >-
+      Landlord's liability is limited to its interest in the building, and Landlord is never
+      liable for consequential damages.
+    departs_if: >-
+      Landlord's liability reaches its other assets, or Landlord is exposed to consequential
+      damages.
+    response: >-
+      Limit recovery to Landlord's interest in the building and exclude consequential damages.
+
+  - id: default
+    topic: Tenant default and cure periods
+    severity: critical
+    standard: >-
+      Tenant has about 5 to 10 days after notice to cure a failure to pay rent, and 30 days after
+      notice to cure other defaults, extended only while Tenant diligently pursues a cure.
+    departs_if: >-
+      Monetary cure periods are longer than 10 days after notice, Landlord must send more than one
+      notice, or non-monetary cure periods are longer than 30 days without a diligence condition.
+    response: >-
+      Return the cure periods to 5 to 10 days for rent and 30 days for other defaults, with one
+      notice.
+
+  - id: casualty
+    topic: Fire or other casualty
+    severity: major
+    standard: >-
+      Landlord restores the building and premises after a casualty. Tenant may terminate only if
+      restoration is not finished within a long outside period (12 months or more), and rent abates
+      only for the unusable space.
+    departs_if: >-
+      Tenant may terminate if restoration takes less than 12 months, or rent abates beyond the
+      unusable space.
+    response: >-
+      Extend Tenant's termination trigger to at least 12 months and tie rent abatement to the
+      unusable part of the premises.
+
+  - id: holdover
+    topic: Holding over
+    severity: major
+    standard: >-
+      If Tenant stays after the term ends, it pays at least 150 percent of the last rent, rising
+      over time, and is liable for Landlord's damages if it stays past a short grace period after
+      notice.
+    departs_if: >-
+      Holdover rent is below 150 percent, or Tenant is never liable for consequential damages from
+      holding over.
+    response: >-
+      Raise holdover rent to at least 150 percent, rising after 30 to 60 days, and keep Tenant
+      liable for damages after notice and a short grace period.
+
+  - id: options
+    topic: Renewal, expansion and first-offer rights
+    severity: major
+    standard: >-
+      Tenant has no renewal, expansion, first-offer or early termination rights unless Landlord
+      approves them, and any renewal is at fair market rent.
+    departs_if: >-
+      The lease gives Tenant a renewal, expansion, right of first offer or refusal, or termination
+      right, or sets renewal rent below fair market value.
+    response: >-
+      Confirm each option is approved; price renewals at fair market rent, make options personal to
+      the original tenant, and void them during a default.
+
+  - id: law_and_jury
+    topic: Governing law and jury waiver
+    severity: minor
+    standard: >-
+      New York law governs, and both parties waive a jury trial.
+    departs_if: >-
+      Another state's law governs, or there is no mutual jury waiver.
+    response: >-
+      Choose New York law and add a mutual waiver of trial by jury.
