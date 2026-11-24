@@ -37,8 +37,17 @@ def test_call_uses_structured_output_and_reports_cost(playbook):
     kw = client.calls[0]
     assert kw["output_config"]["format"] == {"type": "json_schema", "schema": SCHEMA}
     assert kw["model"] == "claude-opus-5-5"
-    assert review["_meta"]["cost_usd"] == 0.5  # 100k in at $4/M + 5k out at $20/M
+    assert review["_meta"]["cost_usd"] == 1.0  # two calls at 100k in ($4/M) + 5k out ($20/M)
+    assert review["_meta"]["attempts"] == 2  # no positions came back, so it asked once more
     assert review["lease"]["tenant"] == "T"
+
+
+def test_a_complete_reply_is_not_asked_again(playbook):
+    positions = [{"id": pid} for pid in playbook.ids]
+    client = FakeClient({"lease": {}, "positions": positions})
+    review = ClaudeReviewer(client=client)(playbook, "lease")
+    assert len(client.calls) == 1
+    assert review["_meta"]["attempts"] == 1
 
 
 def test_record_then_replay_without_a_client(playbook, tmp_path):

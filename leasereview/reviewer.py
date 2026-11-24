@@ -17,7 +17,8 @@ from .playbook import Playbook
 
 MODEL = "claude-opus-5-5"
 EFFORT = "medium"
-PROMPT_VERSION = "v1"
+PROMPT_VERSION = "v2"
+ATTEMPTS = 2  # a reply that skips positions is asked again once; anything still missing becomes a check
 # USD per million tokens (input, output), first-party list prices.
 PRICES = {"claude-opus-5-5": (4.00, 20.00), "claude-opus-4-8": (5.00, 25.00), "claude-sonnet-5-5": (2.00, 10.00)}
 
@@ -112,6 +113,30 @@ class ClaudeReviewer:
         return {"model": self.model, "effort": self.effort, "prompt": PROMPT_VERSION}
 
     def __call__(self, playbook: Playbook, lease_text: str) -> dict:
+        """Review once; if the reply leaves out any position, ask again (at most ATTEMPTS calls)."""
+        wanted = {p.id for p in playbook.positions}
+        cost = latency = 0.0
+        tokens_in = tokens_out = attempts = 0
+        while attempts < ATTEMPTS:
+            attempts += 1
+            review, response, seconds = self._once(playbook, lease_text)
+            cost += self.cost(response)
+            latency += seconds
+            tokens_in += response.usage.input_tokens
+            tokens_out += response.usage.output_tokens
+            if wanted <= {p.get("id") for p in review.get("positions", [])}:
+                break
+        review["_meta"] = {
+            "model": getattr(response, "model", self.model),
+            "cost_usd": round(cost, 4),
+            "latency_s": round(latency, 2),
+            "input_tokens": tokens_in,
+            "output_tokens": tokens_out,
+            "attempts": attempts,
+        }
+        return review
+
+    def _once(self, playbook: Playbook, lease_text: str) -> tuple[dict, Any, float]:
         start = time.perf_counter()
         response = self.client.beta.messages.create(
             model=self.model,
@@ -128,15 +153,7 @@ class ClaudeReviewer:
         if response.stop_reason == "max_tokens":
             raise RuntimeError("the review was cut off at max_tokens")
         text = next(b.text for b in response.content if b.type == "text")
-        review = json.loads(text)
-        review["_meta"] = {
-            "model": getattr(response, "model", self.model),
-            "cost_usd": self.cost(response),
-            "latency_s": round(latency, 2),
-            "input_tokens": response.usage.input_tokens,
-            "output_tokens": response.usage.output_tokens,
-        }
-        return review
+        return json.loads(text), response, latency
 
     def cost(self, response: Any) -> float:
         price = PRICES.get(getattr(response, "model", self.model)) or PRICES.get(self.model, (0.0, 0.0))
