@@ -71,7 +71,7 @@ positions:
       operating expense escalation.
     response: >-
       Remove the cap, or limit it to controllable expenses at no less than 5 percent per year on a
-      non-cumulative basis.
+      cumulative basis.
 
   - id: taxes
     topic: Real estate tax escalations
