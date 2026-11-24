@@ -18,8 +18,8 @@ ROOT = Path(__file__).resolve().parent.parent
 LIST = ROOT / "leases" / "edgar.yml"
 OUT = ROOT / "leases" / "edgar"
 BLOCKS = ["p", "div", "tr", "li", "h1", "h2", "h3", "h4", "h5", "h6", "table", "center"]
-USER_AGENT = "lease-issues-list 273664482+pg2342-hub@users.noreply.github.com"
-HEADERS = {"User-Agent": USER_AGENT, "Accept-Encoding": "gzip, deflate", "Host": "www.sec.gov"}
+USER_AGENT = "Pranav Gudise 273664482+pg2342-hub@users.noreply.github.com"
+HEADERS = {"User-Agent": USER_AGENT, "Accept-Encoding": "gzip, deflate"}
 
 
 def html_to_text(html: str) -> str:
