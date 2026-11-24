@@ -61,7 +61,7 @@ def main() -> int:
 
     reports = ROOT / "reports"
     reports.mkdir(exist_ok=True)
-    (reports / "results.json").write_text(json.dumps(out, indent=1, sort_keys=True), encoding="utf-8")
+    (reports / "results.json").write_text(json.dumps(out, indent=1, sort_keys=True, default=str), encoding="utf-8")
     return 0
 
 

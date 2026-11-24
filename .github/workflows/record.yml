@@ -28,6 +28,13 @@ jobs:
           rm -f recordings/reviews.jsonl
           LEASE_LIVE=1 python scripts/run_all.py
           test "$(wc -l < recordings/reviews.jsonl)" -eq 10 || { echo "incomplete recording, not committing"; exit 1; }
+      - name: Keep the recording even if a later step fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: recording
+          path: recordings/reviews.jsonl
+          if-no-files-found: ignore
       - name: Grade the recording and rebuild the demo page (replay only)
         run: |
           python scripts/run_all.py

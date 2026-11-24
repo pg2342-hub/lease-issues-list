@@ -155,7 +155,7 @@ def page(d: dict) -> str:
         f'<li><a href="{html.escape(lease["url"])}">Lease {i + 1}</a>: {html.escape(lease["label"])}, filed {lease["filed"]}</li>'
         for i, lease in enumerate(leases)
     )
-    payload = json.dumps(d, separators=(",", ":")).replace("</", "<\\/")
+    payload = json.dumps(d, separators=(",", ":"), default=str).replace("</", "<\\/")
     tpl = (ROOT / "scripts" / "demo_template.html").read_text(encoding="utf-8")
     subs = {
         "{{LEASE_BUTTONS}}": lease_buttons,
