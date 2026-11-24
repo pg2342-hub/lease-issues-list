@@ -52,6 +52,8 @@ def fetch_all(force: bool = False) -> list[Path]:
         path = OUT / f"{lease['id']}.txt"
         if force or not path.exists():
             r = requests.get(lease["url"], headers=HEADERS, timeout=60)
+            if not r.ok:
+                print(r.status_code, r.headers.get("server"), r.text[:400])
             r.raise_for_status()
             path.write_text(html_to_text(r.text), encoding="utf-8")
             time.sleep(0.5)
