@@ -18,7 +18,8 @@ ROOT = Path(__file__).resolve().parent.parent
 LIST = ROOT / "leases" / "edgar.yml"
 OUT = ROOT / "leases" / "edgar"
 BLOCKS = ["p", "div", "tr", "li", "h1", "h2", "h3", "h4", "h5", "h6", "table", "center"]
-USER_AGENT = "lease-issues-list demo build 273664482+pg2342-hub@users.noreply.github.com"
+USER_AGENT = "lease-issues-list 273664482+pg2342-hub@users.noreply.github.com"
+HEADERS = {"User-Agent": USER_AGENT, "Accept-Encoding": "gzip, deflate", "Host": "www.sec.gov"}
 
 
 def html_to_text(html: str) -> str:
@@ -50,7 +51,7 @@ def fetch_all(force: bool = False) -> list[Path]:
     for lease in leases():
         path = OUT / f"{lease['id']}.txt"
         if force or not path.exists():
-            r = requests.get(lease["url"], headers={"User-Agent": USER_AGENT}, timeout=60)
+            r = requests.get(lease["url"], headers=HEADERS, timeout=60)
             r.raise_for_status()
             path.write_text(html_to_text(r.text), encoding="utf-8")
             time.sleep(0.5)
