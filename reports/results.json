@@ -3,17 +3,18 @@
   {
    "id": "constructed-1",
    "meta": {
-    "cost_usd": 0.0348,
+    "attempts": 1,
+    "cost_usd": 0.1071,
     "input_tokens": 6319,
-    "latency_s": 5.0,
+    "latency_s": 30.1,
     "model": "claude-opus-5-5",
-    "output_tokens": 477
+    "output_tokens": 4093
    },
    "score": {
     "critical_misses": 0,
     "lease": "constructed-1",
     "missed_departures": 0,
-    "right": 2,
+    "right": 15,
     "rows": [
      {
       "critical_miss": false,
@@ -25,23 +26,58 @@
      {
       "critical_miss": false,
       "expected": "departs",
-      "got": "check",
+      "got": "issue",
       "id": "operating_expenses",
-      "right": false
+      "right": true
      },
      {
       "critical_miss": false,
       "expected": "departs",
-      "got": "check",
+      "got": "issue",
       "id": "security_deposit",
-      "right": false
+      "right": true
      },
      {
       "critical_miss": false,
       "expected": "departs",
-      "got": "check",
+      "got": "issue",
       "id": "landlord_liability",
-      "right": false
+      "right": true
+     },
+     {
+      "critical_miss": false,
+      "expected": "departs",
+      "got": "issue",
+      "id": "use",
+      "right": true
+     },
+     {
+      "critical_miss": false,
+      "expected": "departs",
+      "got": "issue",
+      "id": "indemnity",
+      "right": true
+     },
+     {
+      "critical_miss": false,
+      "expected": "departs",
+      "got": "issue",
+      "id": "casualty",
+      "right": true
+     },
+     {
+      "critical_miss": false,
+      "expected": "departs",
+      "got": "issue",
+      "id": "options",
+      "right": true
+     },
+     {
+      "critical_miss": false,
+      "expected": "departs",
+      "got": "issue",
+      "id": "law_and_jury",
+      "right": true
      },
      {
       "critical_miss": false,
@@ -52,94 +88,60 @@
      },
      {
       "critical_miss": false,
-      "expected": "departs",
-      "got": "check",
-      "id": "use",
-      "right": false
-     },
-     {
-      "critical_miss": false,
       "expected": "consistent",
-      "got": "check",
+      "got": "consistent",
       "id": "alterations",
-      "right": false
+      "right": true
      },
      {
       "critical_miss": false,
       "expected": "consistent",
-      "got": "check",
+      "got": "consistent",
       "id": "restoration",
-      "right": false
+      "right": true
      },
      {
       "critical_miss": false,
       "expected": "consistent",
-      "got": "check",
+      "got": "consistent",
       "id": "taxes",
-      "right": false
+      "right": true
      },
      {
       "critical_miss": false,
       "expected": "consistent",
-      "got": "check",
+      "got": "consistent",
       "id": "insurance",
-      "right": false
-     },
-     {
-      "critical_miss": false,
-      "expected": "departs",
-      "got": "check",
-      "id": "indemnity",
-      "right": false
-     },
-     {
-      "critical_miss": false,
-      "expected": "departs",
-      "got": "check",
-      "id": "casualty",
-      "right": false
+      "right": true
      },
      {
       "critical_miss": false,
       "expected": "consistent",
-      "got": "check",
+      "got": "consistent",
       "id": "holdover",
-      "right": false
-     },
-     {
-      "critical_miss": false,
-      "expected": "departs",
-      "got": "check",
-      "id": "options",
-      "right": false
-     },
-     {
-      "critical_miss": false,
-      "expected": "departs",
-      "got": "check",
-      "id": "law_and_jury",
-      "right": false
+      "right": true
      }
     ],
     "total": 15
    },
    "summary": {
-    "check": 14,
-    "consistent": 0,
-    "critical_issues": 1,
-    "issue": 1,
+    "check": 1,
+    "consistent": 5,
+    "critical_issues": 4,
+    "issue": 9,
     "quotes_dropped": 0,
-    "quotes_verified": 2
+    "quotes_verified": 20
    }
   },
   {
    "id": "constructed-2",
    "meta": {
-    "cost_usd": 0.1031,
+    "attempts": 1,
+    "cost_usd": 0.1012,
     "input_tokens": 6406,
-    "latency_s": 28.41,
+    "latency_s": 27.99,
     "model": "claude-opus-5-5",
-    "output_tokens": 3873
+    "output_tokens": 3777
    },
    "score": {
     "critical_misses": 0,
@@ -267,11 +269,12 @@
   {
    "id": "constructed-3",
    "meta": {
-    "cost_usd": 0.0966,
+    "attempts": 1,
+    "cost_usd": 0.0981,
     "input_tokens": 6210,
-    "latency_s": 27.06,
+    "latency_s": 27.71,
     "model": "claude-opus-5-5",
-    "output_tokens": 3587
+    "output_tokens": 3662
    },
    "score": {
     "critical_misses": 0,
@@ -399,11 +402,12 @@
   {
    "id": "constructed-4",
    "meta": {
-    "cost_usd": 0.1053,
+    "attempts": 1,
+    "cost_usd": 0.1024,
     "input_tokens": 6274,
-    "latency_s": 29.7,
+    "latency_s": 28.53,
     "model": "claude-opus-5-5",
-    "output_tokens": 4012
+    "output_tokens": 3865
    },
    "score": {
     "critical_misses": 0,
@@ -531,11 +535,12 @@
   {
    "id": "constructed-5",
    "meta": {
-    "cost_usd": 0.0979,
+    "attempts": 1,
+    "cost_usd": 0.099,
     "input_tokens": 6386,
-    "latency_s": 26.99,
+    "latency_s": 26.8,
     "model": "claude-opus-5-5",
-    "output_tokens": 3618
+    "output_tokens": 3671
    },
    "score": {
     "critical_misses": 0,
@@ -663,11 +668,12 @@
   {
    "id": "constructed-6",
    "meta": {
-    "cost_usd": 0.0944,
+    "attempts": 1,
+    "cost_usd": 0.0986,
     "input_tokens": 5873,
-    "latency_s": 26.97,
+    "latency_s": 28.24,
     "model": "claude-opus-5-5",
-    "output_tokens": 3546
+    "output_tokens": 3754
    },
    "score": {
     "critical_misses": 0,
@@ -802,36 +808,36 @@
      "dropped_quotes": 0,
      "id": "assignment",
      "kind": "issue",
-     "lease_says": "Transfers need Owner's consent, with a recapture right and a 50 percent share of sublease profit and assignment consideration, but Tenant may transfer without consent to affiliates, subsidiaries and successors and may defeat recapture by withdrawing its request.",
+     "lease_says": "Assignment and subletting need Owner's consent and Owner has a recapture right and a 50 percent profit share, but Tenant may transfer without consent to affiliates, subsidiaries and successors, and may rescind its request to defeat a recapture.",
      "model_status": "departs",
-     "proposed_response": "Apply the net worth test in Article 52(g) to affiliate and subsidiary transfers as well as successors, require that any affiliate or subsidiary transferee remain an affiliate or subsidiary for the transfer to stay valid, and delete Tenant's right in Article 52(a)(2) to rescind its request after Owner elects recapture.",
+     "proposed_response": "Apply a net worth test to all consent-free affiliate and subsidiary transfers (not only successors), delete Tenant's right to rescind after Owner elects recapture, confirm the 50 percent share of transfer profit without the sale-of-business carve-out, and correct the paragraph lettering and cross-references in Article 52.",
      "quotes": [
       {
-       "at": 135154,
-       "text": "Owner may notify Tenant that Owner elects to: (a) cancel this lease, in which event such cancellation shall become effective on the date proposed by Tenant for such assignment or subletting",
+       "at": 145324,
+       "text": "Tenant may, without Owner\u2019s consent and on not less than ten (10) days prior written notice to Owner",
+       "verified": true
+      },
+      {
+       "at": 146154,
+       "text": "an entity which shall be an \u201caffiliate\u201d, \u201csubsidiary\u201d or \u201csuccessor\u201d (each as hereinafter defined) of Tenant and the provisions of Paragraphs (a), (b) and (c) of this Article shall be inapplicable to such transaction",
        "verified": true
       },
       {
        "at": 136438,
        "text": "Tenant shall have the right to rescind the Tenant request to assign the Lease or sublease the Premises which gave rise to such exercise by Owner",
        "verified": true
-      },
-      {
-       "at": 145324,
-       "text": "Tenant may, without Owner\u2019s consent and on not less than ten (10) days prior written notice to Owner, ... assign this lease or sublet the demised premises to, or otherwise permit the use of the demised premises by, an entity into which Tenant is merged or consolidated or to an entity which shall be an \u201caffiliate\u201d, \u201csubsidiary\u201d or \u201csuccessor\u201d",
-       "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "Article 11",
-      "Article 52(a)(2)",
-      "Article 52(g)"
+      "52(g)",
+      "52(g)",
+      "52(a)(2)"
      ],
      "severity": "critical",
      "standard": "Tenant may not assign the lease or sublet any part of the premises without Landlord's prior written consent. Before consenting, Landlord may take back (recapture) the space. If Tenant sublets or assigns for more than it pays, Landlord receives at least half of the profit.",
      "topic": "Assignment and subletting",
-     "why": "Recapture and the 50 percent profit share match the standard, but the net worth test applies only to successors, so affiliate and subsidiary transfers are consent-free with no financial test. Article 52(h) also lets up to two affiliate Permitted Users occupy up to 25 percent without consent, and Tenant can nullify a recapture election by rescinding within five days."
+     "why": "The consent-free affiliate and subsidiary transfer carries no net worth test (only successors must meet one), Tenant can withdraw its request to defeat recapture, and the 50 percent share excludes consideration paid for the business in a sale of Tenant's business. Paragraph lettering in Article 52 is inconsistent (two \"(a)\" paragraphs; cross-references to (f), (h) and (j) do not match), which should be fixed."
     },
     {
      "dropped_quotes": 0,
@@ -839,45 +845,40 @@
      "kind": "issue",
      "lease_says": "Tenant carries general liability insurance of at least $3,000,000 per occurrence naming Owner and its managing agent as additional insureds, and both parties waive recovery to the extent of their insurance.",
      "model_status": "departs",
-     "proposed_response": "Raise Tenant's commercial general liability limit to not less than $5,000,000 per occurrence (primary plus umbrella), keeping Owner and its managing agent as additional insureds.",
+     "proposed_response": "Increase Tenant's commercial general liability coverage to at least $5,000,000 per occurrence (primary plus umbrella), keeping Owner, its managing agent and superior parties as additional insureds.",
      "quotes": [
       {
        "at": 114192,
-       "text": "naming Owner (as that term was broadly defined for purposes of this Article only) and Owner\u2019s current managing agent, TF Cornerstone Inc., and any future managing agent, as additional insureds",
+       "text": "naming Owner (as that term was broadly defined for purposes of this Article only) and Owner\u2019s current managing agent, TF Cornerstone Inc., and any future managing agent, as additional insureds, in limits (subject to increase at Owner\u2019s reasonable request) of not less than $3,000,000 combined single limit for bodily and personal injury or death and for property damage per occurrence",
        "verified": true
       },
       {
-       "at": 114386,
-       "text": "in limits (subject to increase at Owner\u2019s reasonable request) of not less than $3,000,000 combined single limit for bodily and personal injury or death and for property damage per occurrence",
-       "verified": true
-      },
-      {
-       "at": 119334,
-       "text": "Tenant hereby waives any and all right of recovery which it might otherwise have against Owner",
+       "at": 118785,
+       "text": "Owner hereby waives any and all right of recovery which it might otherwise have against Tenant, its servants, agents and employees, for loss or damage occurring to the Building",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "Article 44(a)",
-      "Article 44(b)(iii)"
+      "44(a)",
+      "44(b)(iii)"
      ],
      "severity": "major",
      "standard": "Tenant carries commercial general liability insurance of at least 5 million dollars per occurrence (primary plus umbrella), names Landlord and its managing agent as additional insureds, and both parties waive subrogation.",
      "topic": "Tenant's insurance",
-     "why": "The $3,000,000 limit is below the $5 million standard, although Owner may reasonably request increases. The additional insured and mutual waiver terms match the standard."
+     "why": "The $3,000,000 limit is below the $5,000,000 standard. Additional insured status and a mutual waiver of subrogation are in place."
     },
     {
      "dropped_quotes": 0,
      "id": "default",
      "kind": "check",
-     "lease_says": "After a default notice, Tenant appears to have 10 days to cure monetary defaults and 20 days (extended while diligently curing) for other defaults, after which Owner must serve a second five-day cancellation notice.",
+     "lease_says": "After a default notice and a cure period (apparently amended by rider notes to 10 days for money defaults and a longer period, likely 20 days, for other defaults, extended while Tenant diligently cures), Owner must serve a separate 5-day cancellation notice.",
      "model_status": "departs",
-     "proposed_response": "Provide that the lease may be terminated on expiration of the cure period under a single default notice, deleting the separate five-day cancellation notice, and confirm cure periods of 10 days after notice for monetary defaults and no more than 30 days, extended only for diligent cure, for other defaults.",
+     "proposed_response": "Provide that a single default notice with a 10-day cure for monetary defaults and a 30-day diligence-qualified cure for other defaults is sufficient, and confirm how Notes 11 to 14 amend Article 17.",
      "quotes": [
       {
        "at": 34983,
-       "text": "upon Owner serving a written fifteen (15) days\u2019 notice upon Tenant specifying the nature of said default)",
+       "text": "upon Owner serving a written fifteen (15) days\u2019 notice upon Tenant specifying the nature of said default",
        "verified": true
       },
       {
@@ -895,21 +896,22 @@
       "The review marked this call as low confidence."
      ],
      "sections": [
-      "Article 17(1)",
-      "Notes, Notes 11, 12 and 14"
+      "17(1)",
+      "17(1)",
+      "Notes, Note 12"
      ],
      "severity": "critical",
      "standard": "Tenant has about 5 to 10 days after notice to cure a failure to pay rent, and 30 days after notice to cure other defaults, extended only while Tenant diligently pursues a cure.",
      "topic": "Tenant default and cure periods",
-     "why": "The cure periods appear within the standard, but termination requires a second (cancellation) notice. The filed Notes do not show where they are inserted, so the exact cure periods (Note 11 \"twenty (20)\" appears to replace the printed 15 days) and whether rent defaults now need notice cannot be confirmed."
+     "why": "The cure periods are within the standard, but terminating requires a second notice. The footnote markers were lost in the filing, so how Notes 11 to 14 modify Article 17 is inferred."
     },
     {
      "dropped_quotes": 0,
      "id": "alterations",
      "kind": "check",
-     "lease_says": "All alterations need Owner's prior written consent and Owner-approved contractors, but Owner may not unreasonably withhold or delay consent for interior, non-structural work that does not affect Building systems.",
+     "lease_says": "All changes need Owner's prior written consent, but a rider note makes that consent not to be unreasonably withheld or delayed for interior non-structural work that does not affect Building systems.",
      "model_status": "departs",
-     "proposed_response": "Delete Note 1 so Owner's consent to all non-decorative alterations is in its discretion. If a reasonableness standard is kept, limit it to work under a small per-project cost cap that does not touch structure or Building systems.",
+     "proposed_response": "Delete Note 1 or limit the reasonableness standard to purely decorative work, and confirm Owner's consent to all other alterations is in its sole discretion, with Tenant paying Owner's review and supervision costs under Articles 50 and 59.",
      "quotes": [
       {
        "at": 5922,
@@ -918,7 +920,7 @@
       },
       {
        "at": 73215,
-       "text": "which consent shall not be unreasonably withheld or delayed in the case of interior, non-structural work to be performed wholly within the demised premises, which work does not affect the proper functioning of any Building system or equipment",
+       "text": "which consent shall not be unreasonably withheld or delayed in the case of interior, non-structural work to be performed wholly within the demised premises, which work does not affect the proper functioning of any Building system or equipment or that of any other tenant of the Building",
        "verified": true
       }
      ],
@@ -926,31 +928,25 @@
       "The review marked this call as low confidence."
      ],
      "sections": [
-      "Article 3",
-      "Notes, Note 1",
-      "Article 59"
+      "3",
+      "Notes, Note 1"
      ],
      "severity": "major",
      "standard": "Tenant needs Landlord's prior consent for all alterations except purely decorative work (painting, carpeting), uses contractors Landlord approves, and pays Landlord's reasonable review costs.",
      "topic": "Alterations",
-     "why": "Consent is still required and review costs are reimbursed under Article 59, but Note 1 puts Owner under a reasonableness standard for all interior non-structural work regardless of cost, which leaves Owner discretion only for structural or system work. The filed Notes do not show where Note 1 is inserted; it appears to attach to the Article 3 consent requirement."
+     "why": "Owner's discretion over non-structural interior work is limited to a reasonableness standard, so Owner keeps full discretion only over structural or building-system work. The footnote markers were lost in the filing, so where Note 1 is inserted in Article 3 is inferred rather than shown."
     },
     {
      "dropped_quotes": 0,
      "id": "operating_expenses",
      "kind": "consistent",
-     "lease_says": "Tenant pays its proportionate share of operating expense increases over a base year (reset to calendar 2019 by the Third Amendment), with no cap, and expenses are grossed up to 95 percent occupancy.",
+     "lease_says": "Tenant pays its proportionate share of operating expense increases over a base year, now calendar year 2019, with no cap.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 83461,
-       "text": "equal to Tenant\u2019s Proportionate Share of the Operating Expenses for the then current Lease Year or calendar year (as the case may be) that are in excess of the Operating Expenses for the Operating Base Year",
-       "verified": true
-      },
-      {
-       "at": 83906,
-       "text": "Operating Expenses for such period shall be adjusted to reflect Operating Expenses that would have been incurred if ninety-five percent (95%) of the rentable space in the Building had been occupied.",
+       "at": 83358,
+       "text": "pay to Owner as additional rent at the times hereinafter specified an amount (the \u201cOperating Payment\u201d) equal to Tenant\u2019s Proportionate Share of the Operating Expenses for the then current Lease Year or calendar year (as the case may be) that are in excess of the Operating Expenses for the Operating Base Year",
        "verified": true
       },
       {
@@ -961,31 +957,25 @@
      ],
      "reasons": [],
      "sections": [
-      "Article 38(b)",
-      "Article 38(c)",
-      "Third Amendment Paragraph 4(D)"
+      "38(b)",
+      "Third Amendment 4(D)"
      ],
      "severity": "critical",
      "standard": "Tenant pays its proportionate share of increases in operating expenses over a base year, with no cap on controllable expenses.",
      "topic": "Operating expense escalations",
-     "why": "There is no cap, and there is no gross-up of the base year in Tenant's favor. This matches the standard."
+     "why": "No cap applies, and the 95 percent gross-up in 38(c) applies to comparison periods rather than favoring Tenant on the base year. The base year was reset in the amendments, which the standard does not address."
     },
     {
      "dropped_quotes": 0,
      "id": "security_deposit",
      "kind": "consistent",
-     "lease_says": "Tenant posts cash security, now $220,619.00, which Owner may apply on default; Tenant may substitute an unconditional letter of credit; there is no burn-down.",
+     "lease_says": "Tenant has posted a cash deposit, now $220,619.00, that Owner may apply on any default, and there is no burn-down.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 59038,
-       "text": "it is agreed that in the event Tenant defaults in respect of any of the terms, provisions and conditions of this lease",
-       "verified": true
-      },
-      {
-       "at": 153485,
-       "text": "Owner may present such letter of credit for payment upon the occurrence of any default by Tenant hereunder beyond the expiration of any applicable notice or grace period set forth herein",
+       "at": 59056,
+       "text": "in the event Tenant defaults in respect of any of the terms, provisions and conditions of this lease, including, but not to, the payment of rent and additional rent Owner may use, ap4 or retain the whole or any part of the security so deposited",
        "verified": true
       },
       {
@@ -996,50 +986,48 @@
      ],
      "reasons": [],
      "sections": [
-      "Article 34",
-      "Article 54(a)",
-      "Third Amendment Paragraph 6"
+      "34",
+      "Third Amendment 6"
      ],
      "severity": "critical",
      "standard": "Tenant posts cash or an unconditional letter of credit, Landlord may draw on it after a default, and any reduction (burn-down) applies only if Tenant has never been in default.",
      "topic": "Security deposit",
-     "why": "Cash or an unconditional letter of credit is required and there is no reduction. Draws on the letter of credit require a default past notice and cure, which the standard permits."
+     "why": "Cash security is held for the full term with a draw right on default and no reduction, which meets or exceeds the standard. The letter of credit draw in 54(a) requires a default beyond notice and cure, but it applies only if Tenant replaces the cash."
     },
     {
      "dropped_quotes": 0,
      "id": "landlord_liability",
      "kind": "consistent",
-     "lease_says": "Recovery against Owner is limited to its estate and interest in the Building, and Owner is never liable for consequential damages on injury and property-loss claims.",
+     "lease_says": "Tenant's recovery is limited to Owner's interest in the Building, and Owner is not liable for consequential damages on injury or property loss claims.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
        "at": 108506,
-       "text": "Tenant shall look only to Owner\u2019s estate and interest in the Building for the satisfaction of Tenant\u2019s remedies",
+       "text": "Tenant shall look only to Owner\u2019s estate and interest in the Building for the satisfaction of Tenant\u2019s remedies or for the collection of a judgment (or other judicial process) requiring the payment of money by Owner",
        "verified": true
       },
       {
-       "at": 113018,
-       "text": "provided, however, that even if due to any such gross negligence of Owner or Owner\u2019s agents, in no event shall any of the Indemnitees ever be liable with respect to any claim for consequential damages in connection therewith",
+       "at": 113111,
+       "text": "in no event shall any of the Indemnitees ever be liable with respect to any claim for consequential damages in connection therewith",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "Article 36",
-      "Article 43(a)",
-      "Article 43(c)"
+      "43(a)",
+      "43(c)"
      ],
      "severity": "critical",
      "standard": "Landlord's liability is limited to its interest in the building, and Landlord is never liable for consequential damages.",
      "topic": "Limit on Landlord's liability",
-     "why": "The non-recourse limit matches the standard. The consequential damages bar sits in Article 43(c), which addresses injury and property loss, and is not stated as a general bar for every claim."
+     "why": "Recovery is limited to Owner's interest in the Building, as the standard requires. The consequential damages exclusion is tied to the injury and property claims in 43(c) rather than stated for all claims, which the partner may want to broaden."
     },
     {
      "dropped_quotes": 0,
      "id": "use",
      "kind": "consistent",
-     "lease_says": "The premises may be used only for general and executive offices and for no other purpose.",
+     "lease_says": "The premises may be used only for general and executive offices.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -1056,19 +1044,19 @@
      ],
      "reasons": [],
      "sections": [
-      "Basic Lease Provisions (Permitted Use)",
-      "Article 2"
+      "Basic Lease Provisions",
+      "2"
      ],
      "severity": "major",
      "standard": "The premises are used only for general, executive and administrative offices, with no change of use without Landlord's consent.",
      "topic": "Permitted use",
-     "why": "Use is limited to office use with no other purpose allowed, which matches the standard."
+     "why": "Use is limited to office use with no other purpose allowed, which matches the standard position."
     },
     {
      "dropped_quotes": 0,
      "id": "restoration",
      "kind": "consistent",
-     "lease_says": "Tenant must remove specialty alterations and repair the resulting damage at its cost unless Owner agreed in writing, at Tenant's request when consent was sought, that removal would not be required.",
+     "lease_says": "Tenant must remove specialty alterations and repair the damage at its cost unless Owner agreed in writing, at Tenant's request when consent was sought, that removal is not required.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -1085,19 +1073,19 @@
      ],
      "reasons": [],
      "sections": [
-      "Article 48(f) (amending Article 3)",
-      "Article 3"
+      "48(f)",
+      "48(f)"
      ],
      "severity": "major",
      "standard": "At the end of the term Tenant removes its specialty alterations (for example vaults, raised floors, internal staircases, supplemental HVAC) and repairs the damage at its cost.",
      "topic": "Surrender and restoration",
-     "why": "Removal is the default, and Owner does not need to designate items at the time of consent. This matches or exceeds the standard."
+     "why": "Removal applies by default and is waived only if Owner affirmatively agrees, so Owner's failure to designate items does not release Tenant."
     },
     {
      "dropped_quotes": 0,
      "id": "taxes",
      "kind": "consistent",
-     "lease_says": "Because no actual real estate taxes are payable, Tenant pays its proportionate share of the increase in assessed value times tax rate over a Tax Base, with the base year reset to fiscal 2019/20 by the Third Amendment.",
+     "lease_says": "No actual real estate taxes are payable, so Tenant instead pays its proportionate share of the increase in assessed value times tax rate over a base tax year, now fiscal 2019/20, and Owner may recalculate if the Tax Base is reduced.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -1107,32 +1095,32 @@
        "verified": true
       },
       {
-       "at": 240541,
-       "text": "Fiscal year July 1, 2019 through June 30, 2020.",
+       "at": 80571,
+       "text": "If the Tax Base is at any time reduced for any reason whatsoever, Owner shall have the right to adjust the amount of each of Tenant\u2019s payments previously made on account of Taxes",
        "verified": true
       },
       {
-       "at": 80571,
-       "text": "If the Tax Base is at any time reduced for any reason whatsoever, Owner shall have the right to adjust the amount of each of Tenant\u2019s payments previously made on account of Taxes",
+       "at": 240429,
+       "text": "The definition of \u201cTax Base Year\u201d set forth in the Basic Lease Provisions shall be amended to read as follows: \u201cFiscal year July 1, 2019 through June 30, 2020.",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "Article 37(a)(iii) (as amended by Third Amendment Paragraph 4(C))",
-      "Article 37(b)",
-      "Article 37(c)"
+      "37(b)",
+      "37(c)",
+      "Third Amendment 4(C)(i)"
      ],
      "severity": "major",
      "standard": "Tenant pays its proportionate share of increases in real estate taxes over a base tax year.",
      "topic": "Real estate tax escalations",
-     "why": "This is a proportionate share of increases over a base tax year, and Owner may recapture if the Tax Base is reduced. That matches the standard, though the charge is computed from assessed value rather than taxes actually paid."
+     "why": "The payment tracks the standard escalation over a base year, and Owner may adjust if the base drops. The base year was reset in the 2018 and 2019 amendments, which shifts earlier increases to Owner, but this was done as part of renewal terms rather than as a reduction mechanism."
     },
     {
      "dropped_quotes": 0,
      "id": "indemnity",
      "kind": "consistent",
-     "lease_says": "Tenant indemnifies Owner broadly for claims arising from its use and control of the premises and from acts of its people; Owner gives no general indemnity.",
+     "lease_says": "Tenant indemnifies Owner for claims arising from its use and control of the premises and from the acts of its people, and Owner gives no general indemnity.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -1140,34 +1128,29 @@
        "at": 120935,
        "text": "covenants and agrees to indemnify and hold Owner harmless from and against all claims, actions, judgments, damages, liabilities or expenses including, without limitation, reasonable attorneys\u2019 fees, in connection with damage to property or injury or death to persons, arising from or out of the use, alteration, occupation, management, possession or control of the demised premises",
        "verified": true
-      },
-      {
-       "at": 19178,
-       "text": "Tenant shall indemnify and save harmless Owner against and from all liabilities, obligations, damages, penalties, claims, costs and expenses for which Owner shall not be reimbursed by insurance",
-       "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "Article 8",
-      "Article 44(d)"
+      "44(d)",
+      "8"
      ],
      "severity": "major",
      "standard": "Tenant indemnifies Landlord for claims arising from Tenant's use of the premises and its people. Landlord's indemnity, if any, covers only its negligence or willful misconduct.",
      "topic": "Indemnification",
-     "why": "Tenant's indemnity is broad and not limited to gross negligence, and Owner's only indemnities are the mutual broker indemnities in the amendments. This matches the standard."
+     "why": "Tenant's indemnity is broad and not limited to gross negligence. Owner's only indemnity is the mutual brokerage indemnity in the amendments."
     },
     {
      "dropped_quotes": 0,
      "id": "casualty",
      "kind": "consistent",
-     "lease_says": "Owner repairs casualty damage, rent abates only for the unusable part (or fully if wholly unusable), only Owner may terminate, and Tenant waives its statutory termination right.",
+     "lease_says": "Owner restores after a casualty, rent abates according to the usable part of the premises, only Owner may terminate, and Tenant waives its statutory termination right.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 20707,
-       "text": "shall be apportioned from the day following the casualty, according to e part of the demised premises which is usable",
+       "at": 20535,
+       "text": "the damages thereto shall be repaired by, and at the expense of, Owner, and the rent and other items of additional rent, until such repair shall be substantially complete, shall be apportioned from the day following the casualty",
        "verified": true
       },
       {
@@ -1183,48 +1166,48 @@
      ],
      "reasons": [],
      "sections": [
-      "Article 9(b)",
-      "Article 9(d)",
-      "Article 9(f)"
+      "9(b)",
+      "9(d)",
+      "9(f)"
      ],
      "severity": "major",
      "standard": "Landlord restores the building and premises after a casualty. Tenant may terminate only if restoration is not finished within a long outside period (12 months or more), and rent abates only for the unusable space.",
      "topic": "Fire or other casualty",
-     "why": "Tenant has no termination right and abatement is tied to usable space. This matches or exceeds the standard."
+     "why": "Tenant has no termination right at all and abatement is tied to the unusable space, which gives Owner more than the standard."
     },
     {
      "dropped_quotes": 0,
      "id": "holdover",
      "kind": "consistent",
-     "lease_says": "A holdover Tenant pays 250 percent of the last year's Base Rent and additional rent and is liable from day one for all of Owner's losses, including succeeding tenants' claims.",
+     "lease_says": "A holdover Tenant pays 250 percent of the last year's rent and is liable for all of Owner's losses, including claims by succeeding tenants.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 128967,
-       "text": "per diem use and occupancy in respect of the demised premises equal to two and one-half (2 1/2) times the Base Rent and additional rent payable hereunder for the last year of the Term",
+       "at": 128540,
+       "text": "all losses and damages which Owner may incur or sustain by reason thereof",
        "verified": true
       },
       {
-       "at": 128536,
-       "text": "(i) all losses and damages which Owner may incur or sustain by reason thereof",
+       "at": 128967,
+       "text": "per diem use and occupancy in respect of the demised premises equal to two and one-half (2 1/2) times the Base Rent and additional rent payable hereunder for the last year of the Term",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "Article 48(e) (amending Article 22)"
+      "48(e)"
      ],
      "severity": "major",
      "standard": "If Tenant stays after the term ends, it pays at least 150 percent of the last rent, rising over time, and is liable for Landlord's damages if it stays past a short grace period after notice.",
      "topic": "Holding over",
-     "why": "The rate exceeds 150 percent and damages liability has no grace period. This is more favorable to Owner than the standard."
+     "why": "Holdover rent exceeds 150 percent from day one, and Tenant is liable for damages with no grace period."
     },
     {
      "dropped_quotes": 0,
      "id": "options",
      "kind": "consistent",
-     "lease_says": "The lease and amendments grant no renewal, expansion, first-offer or termination options; term extensions were made only by negotiated amendments, and any option is unexercisable during a default.",
+     "lease_says": "The lease and its amendments grant no renewal, expansion, first offer or termination options, and any option is void during a default.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -1236,18 +1219,18 @@
      ],
      "reasons": [],
      "sections": [
-      "Article 62(e)"
+      "62(e)"
      ],
      "severity": "major",
      "standard": "Tenant has no renewal, expansion, first-offer or early termination rights unless Landlord approves them, and any renewal is at fair market rent.",
      "topic": "Renewal, expansion and first-offer rights",
-     "why": "No options are granted, which matches the standard."
+     "why": "Term extensions and added space were agreed by negotiated amendments rather than options, so Tenant holds no unilateral rights."
     },
     {
      "dropped_quotes": 0,
      "id": "law_and_jury",
      "kind": "consistent",
-     "lease_says": "New York law governs, and both parties waive jury trial except for personal injury or property damage claims.",
+     "lease_says": "New York law governs, and both parties waive a jury trial except for personal injury or property damage claims.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -1264,28 +1247,29 @@
      ],
      "reasons": [],
      "sections": [
-      "Article 62(b)",
-      "Article 26"
+      "62(b)",
+      "26"
      ],
      "severity": "minor",
      "standard": "New York law governs, and both parties waive a jury trial.",
      "topic": "Governing law and jury waiver",
-     "why": "New York law governs and the jury waiver is mutual, which matches the standard; the personal injury and property damage carve-out is the standard printed-form exception."
+     "why": "New York law and a mutual jury waiver are in place. The personal injury and property damage carve-out is the standard printed-form exception."
     }
    ],
    "label": "Midtown office tower, part floor, 2013",
    "meta": {
-    "cost_usd": 0.6176,
+    "attempts": 1,
+    "cost_usd": 0.5921,
     "input_tokens": 86770,
-    "latency_s": 109.83,
+    "latency_s": 98.45,
     "model": "claude-opus-5-5",
-    "output_tokens": 13528
+    "output_tokens": 12250
    },
    "parties": {
-    "dated": "March 14, 2013 (amended March 11, 2016; January 23, 2018; June 25, 2019; letter agreement fixing Third Amendment Effective Date as June 28, 2019)",
-    "landlord": "Carnegie Hall Tower II L.L.C. (\"Owner\")",
-    "premises": "Originally a portion of the 21st floor, 152 West 57th Street a/k/a Carnegie Hall Tower, New York; replaced by a portion of the 10th floor (Second Amendment) plus Additional Premises on the 10th floor (Third Amendment)",
-    "tenant": "Thorne Research, Inc., an Idaho corporation"
+    "dated": "March 14, 2013 (amended March 11, 2016, January 23, 2018 and June 25, 2019)",
+    "landlord": "Carnegie Hall Tower II L.L.C.",
+    "premises": "Portion of the 21st floor, 152 West 57th Street (Carnegie Hall Tower), New York, New York; replaced by a portion of the 10th floor under the Second Amendment (2018) and expanded by Additional Premises on the 10th floor under the Third Amendment (2019)",
+    "tenant": "Thorne Research, Inc."
    },
    "summary": {
     "check": 2,
@@ -1293,7 +1277,7 @@
     "critical_issues": 1,
     "issue": 2,
     "quotes_dropped": 0,
-    "quotes_verified": 36
+    "quotes_verified": 32
    },
    "url": "https://www.sec.gov/Archives/edgar/data/1844280/000119312521217566/d162335dex1011.htm",
    "words": 40789
@@ -1306,18 +1290,18 @@
      "dropped_quotes": 0,
      "id": "assignment",
      "kind": "issue",
-     "lease_says": "Transfers need Landlord's consent, not to be unreasonably withheld, with a recapture right (12.C), a 50% profit share (12.J), a merger/asset-sale exception with a net worth test (12.K), a consent-free affiliate transfer with no net worth test (12.L), and deemed consent if Landlord does not respond within 30 days.",
+     "lease_says": "Transfers need Landlord's consent, not to be unreasonably withheld and deemed granted after 30 days of silence; Landlord may recapture on an assignment or a sublet for substantially the balance of the Term and takes 50% of net profit; affiliate transfers need no consent or net worth test, and mergers need none if a net worth test is met.",
      "model_status": "departs",
-     "proposed_response": "Condition the Section 12.L affiliate transfer on a net worth test and advance delivery of proof, as in 12.K. Delete the deemed consent in 12.G, or require a second notice with bold-face warning before consent is deemed given. Extend the recapture right in 12.C to any sublease of 50% or more of the Premises.",
+     "proposed_response": "Add a net worth test to the related-corporation transfer in Subsection 12.L. Extend the recapture right in Subsection 12.C to any sublease of all or substantially all of the Premises regardless of term. Delete the deemed-consent sentence in Subsection 12.G, or condition it on a second notice carrying a bold-face warning and a further response period.",
      "quotes": [
-      {
-       "at": 49503,
-       "text": "without obtaining the prior written consent of Landlord in each instance, which consent shall not be unreasonably withheld, conditioned or delayed.",
-       "verified": true
-      },
       {
        "at": 67656,
        "text": "Tenant may, without Landlord's consent, but upon written notice to Landlord, permit any corporations or other business entities (but not including Governmental Entities) which control, are controlled by, or are under common control with Tenant (herein referred to as \"related corporation\") to receive an assignment of this Lease or to sublet all or part of the Premises",
+       "verified": true
+      },
+      {
+       "at": 52433,
+       "text": "terminate this Lease and recapture the entire Premises in the event of an assignment of the Lease, or the applicable portion thereof, in the event of a sublet for substantially the balance of the Term.",
        "verified": true
       },
       {
@@ -1328,60 +1312,60 @@
      ],
      "reasons": [],
      "sections": [
-      "12.A",
-      "12.L",
-      "12.G"
+      "Article 12, Subsection L",
+      "Article 12, Subsection C",
+      "Article 12, Subsection G"
      ],
      "severity": "critical",
      "standard": "Tenant may not assign the lease or sublet any part of the premises without Landlord's prior written consent. Before consenting, Landlord may take back (recapture) the space. If Tenant sublets or assigns for more than it pays, Landlord receives at least half of the profit.",
      "topic": "Assignment and subletting",
-     "why": "Recapture, the 50% profit share and the merger net worth test match the standard. However, the affiliate transfer needs no consent and carries no net worth test, and the deemed-consent mechanism goes beyond the standard position. Recapture also applies only to an assignment or a sublet for substantially the balance of the Term."
+     "why": "The recapture right and 50% profit share match the standard, but the affiliate transfer right has no net worth test, recapture does not reach shorter or partial-term sublets, and the deemed-consent provision goes beyond the standard."
     },
     {
      "dropped_quotes": 0,
      "id": "operating_expenses",
      "kind": "issue",
-     "lease_says": "The escalation article covers only real estate taxes, so Tenant pays no operating expense escalation.",
+     "lease_says": "The escalation article covers only real estate taxes, so Tenant pays no operating expense escalation beyond the fixed base rent steps in Exhibit D, electricity and specific charges.",
      "model_status": "departs",
-     "proposed_response": "Add an operating expense escalation under which Tenant pays its 9% Proportionate Share of increases over a base year, with no cap on controllable expenses.",
+     "proposed_response": "Add an operating expense escalation under which Tenant pays its 9% Proportionate Share of increases over a base year, with no cap on controllable expenses, or confirm that the fixed rent steps were agreed in lieu of it.",
      "quotes": [
       {
-       "at": 2154,
-       "text": "\u201cAdditional Rent\u201d shall mean the amounts payable by Tenant on account of Tenant\u2019s Proportionate Share of Taxes as described in Article 28 herein, the Electric Charges as described in Article 30 herein, and all other amounts expressly identified as being Additional Rent payable by Tenant to Landlord under this Lease.",
+       "at": 2172,
+       "text": "shall mean the amounts payable by Tenant on account of Tenant\u2019s Proportionate Share of Taxes as described in Article 28 herein, the Electric Charges as described in Article 30 herein",
        "verified": true
       },
       {
        "at": 117529,
-       "text": "If the Taxes payable for any Comparison Year (any part or all of which falls within the Term) shall represent an increase above the Base Taxes, then the Rent for such Comparison Year ... shall be increased by Tenant's Proportionate Share of such increase.",
+       "text": "If the Taxes payable for any Comparison Year (any part or all of which falls within the Term) shall represent an increase above the Base Taxes, then the Rent for such Comparison Year and continuing thereafter until a new Landlord's Statement is rendered to Tenant, shall be increased by Tenant's Proportionate Share of such increase.",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "1.A(i)",
-      "28.B"
+      "Article 1, Subsection A(i)",
+      "Article 28, Subsection B"
      ],
      "severity": "critical",
      "standard": "Tenant pays its proportionate share of increases in operating expenses over a base year, with no cap on controllable expenses.",
      "topic": "Operating expense escalations",
-     "why": "Tenant pays no share of operating expense increases, which is a listed departure. Tenant does separately bear its own cleaning, HVAC unit maintenance, window cleaning and submetered electricity."
+     "why": "Tenant pays no share of increases in operating expenses, which is a listed departure. The fixed annual rent increases (about 3.5%) may have been the commercial trade-off for this."
     },
     {
      "dropped_quotes": 0,
      "id": "alterations",
      "kind": "issue",
-     "lease_says": "Alterations need Landlord's consent, not to be unreasonably withheld, conditioned or delayed. Cosmetic work under $50,000 per project or six-month series needs no consent. Review costs are capped at $3,500, and plans are deemed approved after 15 days of silence.",
+     "lease_says": "Alterations need Landlord's consent, not to be unreasonably withheld, except cosmetic work under $50,000 per project or six-month series; plans are deemed approved after 15 days of silence, and Landlord's review costs are capped at $3,500.",
      "model_status": "departs",
-     "proposed_response": "Limit consent-free work to purely decorative painting and carpeting, or cap Minor Alterations at a small per-project amount (for example $10,000) excluding anything touching building systems or structure. Delete the $3,500 cap on review costs. Replace deemed approval with a second-notice mechanism.",
+     "proposed_response": "Limit consent-free work to purely decorative painting and carpeting, or cap Minor Alterations at a small per-project amount and expressly exclude anything touching Building systems or structure. Remove the $3,500 cap on Landlord's reasonable review costs. Delete the 15-day deemed approval, or require a second notice with a further response period.",
      "quotes": [
       {
-       "at": 8742,
-       "text": "Tenant shall not be required to obtain Landlord\u2019s consent for repainting, recarpeting, or other alterations, tenant improvements, alterations or physical additions to the Premises which are cosmetic in nature totaling less than $50,000 in any single instance or series of related alterations performed within a six-month period (\u201cMinor Alterations\u201d)",
+       "at": 8711,
+       "text": "Notwithstanding the foregoing, Tenant shall not be required to obtain Landlord\u2019s consent for repainting, recarpeting, or other alterations, tenant improvements, alterations or physical additions to the Premises which are cosmetic in nature totaling less than $50,000 in any single instance or series of related alterations performed within a six-month period (\u201cMinor Alterations\u201d)",
        "verified": true
       },
       {
-       "at": 12692,
-       "text": "shall pay to Landlord all costs and expenses reasonably incurred by Landlord (including the cost of Landlord's Consultant) in connection with Landlord's review of Tenant's plans and specifications, capped at $3,500.00",
+       "at": 12815,
+       "text": "in connection with Landlord's review of Tenant's plans and specifications, capped at $3,500.00",
        "verified": true
       },
       {
@@ -1392,21 +1376,21 @@
      ],
      "reasons": [],
      "sections": [
-      "3.A",
-      "3.C"
+      "Article 3, Subsection A",
+      "Article 3, Subsection C"
      ],
      "severity": "major",
      "standard": "Tenant needs Landlord's prior consent for all alterations except purely decorative work (painting, carpeting), uses contractors Landlord approves, and pays Landlord's reasonable review costs.",
      "topic": "Alterations",
-     "why": "The consent-free category reaches $50,000, which is well above a low threshold. Landlord's review-cost recovery is capped, and silence counts as approval, so the clause gives Tenant more than the standard position."
+     "why": "The consent-free category reaches $50,000, well above a low threshold. Review-cost recovery is capped, and approval can be deemed by silence."
     },
     {
      "dropped_quotes": 0,
      "id": "insurance",
      "kind": "issue",
-     "lease_says": "Tenant carries commercial general liability insurance of $3,000,000 per occurrence, names Landlord and its managing agent as additional insureds, and the waiver of subrogation is mutual.",
+     "lease_says": "Tenant carries commercial general liability insurance of $3,000,000 per occurrence naming Landlord and its managing agent as additional insureds, and the waiver of subrogation is mutual.",
      "model_status": "departs",
-     "proposed_response": "Increase the commercial general liability requirement to not less than $5,000,000 per occurrence, which may be met through primary plus umbrella or excess coverage.",
+     "proposed_response": "Increase the commercial general liability limit to not less than $5,000,000 per occurrence, which may be met through primary and umbrella coverage.",
      "quotes": [
       {
        "at": 35142,
@@ -1426,49 +1410,54 @@
      ],
      "reasons": [],
      "sections": [
-      "9.A",
-      "9.C"
+      "Article 9, Subsection A",
+      "Article 9, Subsection C"
      ],
      "severity": "major",
      "standard": "Tenant carries commercial general liability insurance of at least 5 million dollars per occurrence (primary plus umbrella), names Landlord and its managing agent as additional insureds, and both parties waive subrogation.",
      "topic": "Tenant's insurance",
-     "why": "The liability limit is below the $5,000,000 standard. The additional-insured and mutual waiver provisions are consistent."
+     "why": "The additional insureds and mutual waiver match the standard, but the $3,000,000 limit is below the $5,000,000 standard."
     },
     {
      "dropped_quotes": 0,
      "id": "indemnity",
      "kind": "issue",
-     "lease_says": "Tenant gives a broad indemnity for its acts, the Premises and its breaches, while Landlord indemnifies Tenant for Losses from any act, omission or negligence of Landlord or its agents, contractors or employees and from Landlord's breach.",
+     "lease_says": "Tenant gives a broad indemnity for its acts, the Premises and its breaches, and Landlord indemnifies Tenant for Losses from any act, omission or negligence of Landlord or its agents, contractors or employees and from Landlord's breach.",
      "model_status": "departs",
-     "proposed_response": "Limit Landlord's indemnity in 37.B to Losses caused by the negligence or willful misconduct of Landlord or its agents, contractors or employees, subject to 9.C and Article 16.",
+     "proposed_response": "Limit Landlord's indemnity in Subsection 37.B to Losses caused by the negligence or willful misconduct of Landlord or its agents, contractors or employees, and clarify the 'and arising from any breach' wording.",
      "quotes": [
       {
-       "at": 155751,
-       "text": "Landlord shall defend, indemnify and hold harmless Tenant and its representatives and agents from and against each and every Loss arising out of any act, omission or negligence of Landlord, or any of its agents, contractors or employees",
+       "at": 155707,
+       "text": "Subject to Subsection C of Article 9 above, Landlord shall defend, indemnify and hold harmless Tenant and its representatives and agents from and against each and every Loss arising out of any act, omission or negligence of Landlord, or any of its agents, contractors or employees",
+       "verified": true
+      },
+      {
+       "at": 153316,
+       "text": "Tenant shall defend, indemnify and hold harmless Landlord and its representatives and agents from and against all liabilities",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "37.A",
-      "37.B"
+      "Article 37, Subsection B",
+      "Article 37, Subsection A"
      ],
      "severity": "major",
      "standard": "Tenant indemnifies Landlord for claims arising from Tenant's use of the premises and its people. Landlord's indemnity, if any, covers only its negligence or willful misconduct.",
      "topic": "Indemnification",
-     "why": "Landlord's indemnity reaches any act or omission, not only negligence or willful misconduct. The 'and' linking it to Landlord's breach makes the scope ambiguous."
+     "why": "Tenant's indemnity matches the standard. Landlord's indemnity covers any act or omission, not only negligence or willful misconduct, although the conjunctive 'and arising from any breach' wording makes its scope unclear."
     },
     {
      "dropped_quotes": 0,
      "id": "casualty",
      "kind": "issue",
-     "lease_says": "Tenant may terminate if repairs are estimated to take, or actually take, more than 180 days, or if the casualty occurs in the final Lease Year, and rent abates for the untenantable portion.",
+     "lease_says": "Tenant may terminate if repairs are estimated to take more than 180 days, are not finished within 180 days, or the casualty occurs in the final Lease Year, and rent abates only for the untenantable portion.",
      "model_status": "departs",
-     "proposed_response": "Extend Tenant's termination trigger to 12 months, both for Landlord's estimate and for actual completion. Limit the final-Lease-Year right to material damage that cannot be repaired within a stated period (for example 90 days).",
+     "proposed_response": "Extend Tenant's termination trigger to restoration not completed within at least 12 months. Limit the final-Lease-Year right to material damage that cannot be repaired within a stated period.",
      "quotes": [
       {
        "at": 41950,
-       "text": "Landlord estimates that the damage caused thereby cannot be repaired within one hundred eighty (180) days after the commencement of repairs (the \"Repair Period\"), or if in fact the damage is not actually fully repaired by Landlord within one hundred eighty (180) days of the date of occurrence of the Casualty, or if the Casualty occurs during the final Lease Year then Tenant may terminate this Lease",
+       "text": "Landlord estimates that the damage caused thereby cannot be repaired within one hundred eighty (180) days after the commencement of repairs (the \"Repair Period\"), or if in fact the damage is not actually fully repaired by Landlord within one hundred eighty (180) days of the date of occurrence of the Casualty, or if the Casualty occurs during the final Lease Year",
        "verified": true
       },
       {
@@ -1479,30 +1468,30 @@
      ],
      "reasons": [],
      "sections": [
-      "10.B",
-      "10.E"
+      "Article 10, Subsection B",
+      "Article 10, Subsection E"
      ],
      "severity": "major",
      "standard": "Landlord restores the building and premises after a casualty. Tenant may terminate only if restoration is not finished within a long outside period (12 months or more), and rent abates only for the unusable space.",
      "topic": "Fire or other casualty",
-     "why": "The 180-day trigger, and the final-year trigger with no stated threshold, are well short of the 12-month standard. The abatement is properly limited to the untenantable portion."
+     "why": "Rent abatement matches the standard, but the 180-day termination trigger is well short of 12 months, and the final-year trigger adds another early exit."
     },
     {
      "dropped_quotes": 0,
      "id": "options",
      "kind": "issue",
-     "lease_says": "Tenant has a one-time option to terminate effective at the end of the month after the second anniversary of the Commencement Date, on six months' notice and payment of a three-month fee; the option is personal and unavailable during an Event of Default; there is no renewal or expansion right.",
+     "lease_says": "Tenant has a one-time option to terminate effective at the end of the month after the second anniversary of the Commencement Date, on six months' notice and payment of a three-month fee; the option is personal and conditioned on no Event of Default.",
      "model_status": "departs",
-     "proposed_response": "Confirm with the client that the Termination Option is approved. Require that no Event of Default exist both on the notice date and on the Termination Date. Confirm that the three-month fee covers Landlord's unamortized costs, including Landlord's Work and brokerage commissions, or increase it accordingly.",
+     "proposed_response": "Confirm the client approved the Termination Option. Require that no Event of Default exist on the Termination Date as well as on exercise. Consider increasing the Termination Fee to cover unamortized brokerage commissions and Landlord's Work costs.",
      "quotes": [
       {
-       "at": 173764,
-       "text": "Provided no Event of Default has occurred under this Lease beyond the expiration of all applicable grace and/or cure periods expressly set forth herein, Tenant shall have a one-time option to terminate this Lease (the \u201cTermination Option\u201d).",
+       "at": 173917,
+       "text": "Tenant shall have a one-time option to terminate this Lease (the \u201cTermination Option\u201d).",
        "verified": true
       },
       {
-       "at": 174405,
-       "text": "Tenant must pay to Landlord, by wire transfer, a termination fee equal to three (3) months of the then escalated Rent and Additional Rent due from Tenant as of the Termination Date (the \u201cTermination Fee\u201d).",
+       "at": 174452,
+       "text": "a termination fee equal to three (3) months of the then escalated Rent and Additional Rent due from Tenant as of the Termination Date (the \u201cTermination Fee\u201d)",
        "verified": true
       },
       {
@@ -1513,24 +1502,29 @@
      ],
      "reasons": [],
      "sections": [
-      "42"
+      "Article 42"
      ],
      "severity": "major",
      "standard": "Tenant has no renewal, expansion, first-offer or early termination rights unless Landlord approves them, and any renewal is at fair market rent.",
      "topic": "Renewal, expansion and first-offer rights",
-     "why": "Any early termination right is a departure unless the partner confirms it was approved. It is personal and conditioned on no Event of Default, but only at the time the option is exercised."
+     "why": "Any early termination right is a departure unless Landlord approved it, though the right is already personal and conditioned on no Event of Default."
     },
     {
      "dropped_quotes": 0,
      "id": "security_deposit",
      "kind": "consistent",
-     "lease_says": "Tenant posts an $80,000 deposit in cash or as a clean, unconditional letter of credit. Landlord may draw after an Event of Default, and there is no burn-down.",
+     "lease_says": "Tenant posts $80,000 in cash or as an unconditional letter of credit, Landlord may draw on an Event of Default, and there is no burn-down.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 145863,
-       "text": "Tenant shall deliver to Landlord the Security Deposit in the form of either a cash deposit (the \u201cCash Deposit\u201d) or a letter of credit (the \u201cLetter of Credit\u201d).",
+       "at": 4620,
+       "text": "\"Security Deposit\" shall mean $80,000.00.",
+       "verified": true
+      },
+      {
+       "at": 146023,
+       "text": "The Letter of Credit shall be issued by a bank approved by Landlord and shall be clean, unconditional, irrevocable, freely transferable",
        "verified": true
       },
       {
@@ -1541,26 +1535,26 @@
      ],
      "reasons": [],
      "sections": [
-      "1.A(xiii)",
-      "33.A",
-      "33.D"
+      "Article 1, Subsection A(xiii)",
+      "Article 33, Subsection A",
+      "Article 33, Subsection D"
      ],
      "severity": "critical",
      "standard": "Tenant posts cash or an unconditional letter of credit, Landlord may draw on it after a default, and any reduction (burn-down) applies only if Tenant has never been in default.",
      "topic": "Security deposit",
-     "why": "Cash or an unconditional letter of credit with a draw right after a default following notice and cure is the standard position, and the absence of any reduction is better for Landlord."
+     "why": "Drawing is tied to an Event of Default, meaning after notice and cure, which the standard allows, and there is no reduction schedule."
     },
     {
      "dropped_quotes": 0,
      "id": "landlord_liability",
      "kind": "consistent",
-     "lease_says": "Landlord's liability is limited to direct damages recoverable only from its interest in the Building and Real Property, and neither party is liable for consequential damages except under Article 21.",
+     "lease_says": "Landlord's liability is limited to direct damages recoverable only from its interest in the Building and the Real Property, and neither party is liable for consequential damages except under the holdover article.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 83982,
-       "text": "The liability of Landlord for Landlord's obligations under this Lease shall not exceed and shall be limited to Tenant's actual direct, but not consequential, damages therefor and shall only be recoverable from Landlord's interest in the Building and the Real Property",
+       "at": 84161,
+       "text": "shall only be recoverable from Landlord's interest in the Building and the Real Property and Tenant shall not look to or attach any other property or assets of Landlord",
        "verified": true
       },
       {
@@ -1571,47 +1565,47 @@
      ],
      "reasons": [],
      "sections": [
-      "16"
+      "Article 16"
      ],
      "severity": "critical",
      "standard": "Landlord's liability is limited to its interest in the building, and Landlord is never liable for consequential damages.",
      "topic": "Limit on Landlord's liability",
-     "why": "Matches the standard. The consequential-damages waiver is mutual, but the Article 21 carve-out preserves Tenant's holdover exposure."
+     "why": "This matches the standard. The mutual consequential-damages waiver carves out holdover, which preserves Landlord's claims against Tenant."
     },
     {
      "dropped_quotes": 0,
      "id": "default",
      "kind": "consistent",
-     "lease_says": "Tenant has 10 days after notice to cure monetary defaults and 30 days after notice for other defaults, extended only while Tenant diligently pursues a cure.",
+     "lease_says": "Tenant has 10 days after one notice to cure a rent default and 30 days after notice to cure other defaults, extended only while it diligently prosecutes a cure.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 85154,
-       "text": "if Tenant shall default in the payment when due of any installment of Rent or in the payment when due of any Additional Rent, and such default shall continue for a period of ten (10) days following written notice from Landlord to Tenant; or",
+       "at": 85284,
+       "text": "such default shall continue for a period of ten (10) days following written notice from Landlord to Tenant",
        "verified": true
       },
       {
        "at": 85626,
-       "text": "Tenant shall fail to remedy such default within thirty (30) days after notice by Landlord to Tenant of such default, or if such default is of such a nature that it cannot be completely remedied within said period of thirty (30) days and Tenant shall not commence within said period of thirty (30) days, or shall not thereafter diligently prosecute to completion all steps necessary to remedy such default",
+       "text": "Tenant shall fail to remedy such default within thirty (30) days after notice by Landlord to Tenant of such default, or if such default is of such a nature that it cannot be completely remedied within said period of thirty (30) days and Tenant shall not commence within said period of thirty (30) days, or shall not thereafter diligently prosecute",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "17.A(i)",
-      "17.A(ii)"
+      "Article 17, Subsection A(i)",
+      "Article 17, Subsection A(ii)"
      ],
      "severity": "critical",
      "standard": "Tenant has about 5 to 10 days after notice to cure a failure to pay rent, and 30 days after notice to cure other defaults, extended only while Tenant diligently pursues a cure.",
      "topic": "Tenant default and cure periods",
-     "why": "Within the standard 5-to-10-day and 30-day periods with a diligence condition and a single default notice. The 10-day termination notice is the usual conditional limitation."
+     "why": "This matches the standard. The later ten-day termination notice is the usual conditional-limitation mechanism, not a second cure notice."
     },
     {
      "dropped_quotes": 0,
      "id": "use",
      "kind": "consistent",
-     "lease_says": "The Premises may be used only for general, executive and administrative offices and for no other purpose.",
+     "lease_says": "Use is limited to general, executive and administrative offices and no other purpose.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -1628,19 +1622,19 @@
      ],
      "reasons": [],
      "sections": [
-      "1.A(x)",
-      "2"
+      "Article 1, Subsection A(x)",
+      "Article 2"
      ],
      "severity": "major",
      "standard": "The premises are used only for general, executive and administrative offices, with no change of use without Landlord's consent.",
      "topic": "Permitted use",
-     "why": "Matches the standard position word for word."
+     "why": "This matches the standard position."
     },
     {
      "dropped_quotes": 0,
      "id": "restoration",
      "kind": "consistent",
-     "lease_says": "Tenant must remove Specialty Alterations at its cost before expiration and repair the damage, without any designation by Landlord at the time of consent.",
+     "lease_says": "Tenant must remove Specialty Alterations, including vaults and internal staircases, at its cost and repair any damage caused by removal, without any designation requirement.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -1651,55 +1645,60 @@
       },
       {
        "at": 11496,
-       "text": "\u201cSpecialty Alterations\u201d shall include Alterations consisting of kitchens, pantries, executive bathrooms, computer installations, safe deposit boxes, vaults, libraries or file rooms requiring reinforcement of floors, internal staircases, conveyors, dumbwaiters and other Alterations of a similar character, which would be unusually difficult and expensive to remove and are not typical for normal office space",
+       "text": "\u201cSpecialty Alterations\u201d shall include Alterations consisting of kitchens, pantries, executive bathrooms, computer installations, safe deposit boxes, vaults, libraries or file rooms requiring reinforcement of floors, internal staircases, conveyors, dumbwaiters and other Alterations of a similar character",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "3.B",
-      "21.A"
+      "Article 3, Subsection B",
+      "Article 21, Subsection A"
      ],
      "severity": "major",
      "standard": "At the end of the term Tenant removes its specialty alterations (for example vaults, raised floors, internal staircases, supplemental HVAC) and repairs the damage at its cost.",
      "topic": "Surrender and restoration",
-     "why": "The removal duty does not depend on Landlord's designation, which matches the standard. Raised floors and supplemental HVAC are not expressly listed and fall in only through the 'similar character' catch-all."
+     "why": "Removal is automatic rather than tied to designation at the time of consent, which matches the standard. Supplemental HVAC is not named but falls within the catch-all for alterations of a similar character."
     },
     {
      "dropped_quotes": 0,
      "id": "taxes",
      "kind": "consistent",
-     "lease_says": "Tenant pays its 9% Proportionate Share of tax increases over the 2023/2024 Base Tax Year, and the Base Taxes are not reduced if the base assessment is later lowered.",
+     "lease_says": "Tenant pays 9% of increases in Taxes over the 2023/2024 Base Tax Year, the base is not reduced by later assessment reductions, and the escalation is waived if no statement is sent within three years.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
        "at": 2476,
-       "text": "\"Base Tax Year\" shall mean the Taxes payable for the 2023/2024 Tax Year (as defined in Article 28 hereof).",
+       "text": "\"Base Tax Year\" shall mean the Taxes payable for the 2023/2024 Tax Year",
        "verified": true
       },
       {
-       "at": 122171,
-       "text": "the Assessed Valuation which had been utilized in computing the Base Taxes is reduced (as a result of settlement, final determination of legal proceedings or otherwise) then, and in such event the Base Taxes shall not be reduced to reflect such reduction.",
+       "at": 122364,
+       "text": "the Base Taxes shall not be reduced to reflect such reduction.",
+       "verified": true
+      },
+      {
+       "at": 119391,
+       "text": "Tenant shall be relieved of any obligation to pay Tenant\u2019s Proportionate Share of Taxes for a Comparison Year in question if a Landlord\u2019s Statement is not delivered by Landlord to Tenant within three (3) years of the due date for Taxes.",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "1.A(ii)",
-      "28.B",
-      "28.D(i)(b)"
+      "Article 1, Subsection A(ii)",
+      "Article 28, Subsection D(i)(b)",
+      "Article 28, Subsection C(i)"
      ],
      "severity": "major",
      "standard": "Tenant pays its proportionate share of increases in real estate taxes over a base tax year.",
      "topic": "Real estate tax escalations",
-     "why": "Matches the standard and protects the base year from reduction. The only point to note is that Tenant is relieved of a year's escalation if Landlord does not deliver a statement within three years (28.C(i))."
+     "why": "This matches the standard, and the no-reduction-of-base clause favors Landlord. The three-year billing deadline is a minor tenant protection to note."
     },
     {
      "dropped_quotes": 0,
      "id": "holdover",
      "kind": "consistent",
-     "lease_says": "Holdover base Rent is 150% for the first 30 days and 200% thereafter, with Additional Rent at 100%, and Tenant indemnifies for succeeding-tenant claims and lost profits after 30 days.",
+     "lease_says": "Holdover rent is 150% of Rent for the first 30 days and 200% thereafter, and Tenant indemnifies Landlord, including for lost profits and successor-tenant claims, if it holds over more than 30 days.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -1709,62 +1708,63 @@
        "verified": true
       },
       {
-       "at": 103587,
-       "text": "if Tenant shall hold-over or remain in possession of any portion of the Premises for more than thirty (30) days following the Expiration Date, Tenant shall protect, defend, indemnify and hold Landlord harmless from all loss, costs (including reasonable attorneys' fees) and liability resulting from such failure, including any claims made by any succeeding tenant founded upon such failure to surrender, and any lost profits to Landlord resulting therefrom.",
+       "at": 103668,
+       "text": "for more than thirty (30) days following the Expiration Date, Tenant shall protect, defend, indemnify and hold Landlord harmless from all loss",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "21.B"
+      "Article 21, Subsection B"
      ],
      "severity": "major",
      "standard": "If Tenant stays after the term ends, it pays at least 150 percent of the last rent, rising over time, and is liable for Landlord's damages if it stays past a short grace period after notice.",
      "topic": "Holding over",
-     "why": "The 150% rising to 200% schedule and the post-grace damages exposure meet the standard. Additional Rent is held at 100%, and 'that portion of the Rent' is not tied expressly to the last month's rate."
+     "why": "The rent level, the step-up and the damages exposure after a short grace period match the standard. Additional Rent is charged at 100%, not at the enhanced rate."
     },
     {
      "dropped_quotes": 0,
      "id": "law_and_jury",
      "kind": "consistent",
-     "lease_says": "New York law governs, with venue in New York County, and both parties waive trial by jury.",
+     "lease_says": "New York law governs, venue is New York County, and both parties waive a jury trial.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 171418,
-       "text": "This Lease shall be deemed to have been made in New York County, New York, and shall be construed in accordance with the laws of New York.",
+       "at": 171497,
+       "text": "shall be construed in accordance with the laws of New York.",
        "verified": true
       },
       {
        "at": 110322,
-       "text": "It is mutually agreed by and between Landlord and Tenant that the respective parties hereto shall and they hereby do waive trial by jury in any action, proceeding or counterclaim brought by either of the parties hereto against the other on any matters whatsoever arising out of or in any way connected with this Lease",
+       "text": "It is mutually agreed by and between Landlord and Tenant that the respective parties hereto shall and they hereby do waive trial by jury",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "41.M",
-      "25"
+      "Article 41, Subsection M",
+      "Article 25"
      ],
      "severity": "minor",
      "standard": "New York law governs, and both parties waive a jury trial.",
      "topic": "Governing law and jury waiver",
-     "why": "Matches the standard position."
+     "why": "This matches the standard position."
     }
    ],
    "label": "Garment District office building, full floor, 2023",
    "meta": {
-    "cost_usd": 0.4691,
+    "attempts": 1,
+    "cost_usd": 0.4488,
     "input_tokens": 62932,
-    "latency_s": 85.2,
+    "latency_s": 78.9,
     "model": "claude-opus-5-5",
-    "output_tokens": 10871
+    "output_tokens": 9853
    },
    "parties": {
-    "dated": "____ day of September 2023 (day left blank)",
+    "dated": "____ day of September 2023 (day left blank in filed copy)",
     "landlord": "AZUL NYC LLC",
-    "premises": "Entire seventh (7th) floor, 44 West 37th Street, New York, New York",
+    "premises": "Entire Seventh (7th) Floor, 44 West 37th Street, New York, New York",
     "tenant": "COMPASS PATHWAYS, INC."
    },
    "summary": {
@@ -1773,7 +1773,7 @@
     "critical_issues": 2,
     "issue": 7,
     "quotes_dropped": 0,
-    "quotes_verified": 33
+    "quotes_verified": 36
    },
    "url": "https://www.sec.gov/Archives/edgar/data/1816590/000162828023036170/ex-102xleaseagreementbetwe.htm",
    "words": 29060
@@ -1786,18 +1786,18 @@
      "dropped_quotes": 0,
      "id": "use",
      "kind": "issue",
-     "lease_says": "Use is limited to executive and general office, plus an open-ended list of ancillary uses for Permitted Users that includes data centers, printing, conference centers, an exercise facility, recording and video studios, and serving alcohol.",
+     "lease_says": "Use is executive and general office plus open-ended 'customary ancillary uses', including a non-exhaustive list: cafeterias without cooking, serving alcohol to Permitted Users, data centers, printing, an exercise facility, and recording and video studios.",
      "model_status": "departs",
-     "proposed_response": "Delete \"without limitation\" so the ancillary uses are a closed list of specifically approved exceptions. Confirm that any ancillary use not listed requires Landlord's prior written consent.",
+     "proposed_response": "Delete 'without limitation' and the open-ended grant of 'customary ancillary uses ... as shall be reasonably required by Tenant'. Limit use to general, executive and administrative offices, with only the specifically enumerated ancillary uses Landlord approves listed as closed exceptions.",
      "quotes": [
       {
-       "at": 8507,
-       "text": "Such ancillary uses may include, without limitation, the following uses, provided the same are (x) ancillary to the primary use of the Premises for executive and general offices",
+       "at": 8099,
+       "text": "The Premises shall be used and occupied for executive and general office use consistent with that found in Class \u201cA\u201d high-rise office buildings located in midtown Manhattan (\u201cComparable Buildings\u201d)",
        "verified": true
       },
       {
-       "at": 10686,
-       "text": "Tenant may serve (but not sell) in the Premises alcoholic beverages solely to Permitted Users and not to the general public",
+       "at": 8507,
+       "text": "Such ancillary uses may include, without limitation, the following uses",
        "verified": true
       },
       {
@@ -1813,19 +1813,19 @@
      "severity": "major",
      "standard": "The premises are used only for general, executive and administrative offices, with no change of use without Landlord's consent.",
      "topic": "Permitted use",
-     "why": "The core use is general office, and cooking is barred. However, the \"without limitation\" ancillary list goes beyond general office to include studios, an exercise facility, conference centers and alcohol service, and it is not a closed list of approved exceptions."
+     "why": "The primary use matches the standard. However, the ancillary-use grant is open-ended ('without limitation', 'as shall be reasonably required by Tenant') and covers non-office uses such as studios, a gym, data centers and alcohol service, instead of a closed list of approved exceptions."
     },
     {
      "dropped_quotes": 0,
      "id": "alterations",
      "kind": "issue",
-     "lease_says": "Landlord's consent to non-structural Alterations that do not affect Building Systems cannot be unreasonably withheld. Decorative and workstation/data work up to $250,000 (rising to $400,000 after expansion, both CPI-adjusted) needs no consent, and Landlord is deemed to consent if it does not respond after a reminder notice.",
+     "lease_says": "Consent is required for Alterations but cannot be unreasonably withheld for non-structural, non-systems work. Decorative and workstation/data work up to $250,000 ($400,000 after expansion), CPI-adjusted, needs no consent, and consent is deemed given after a second unanswered notice.",
      "model_status": "departs",
-     "proposed_response": "Require Landlord's consent for all non-decorative Alterations. Reduce the consent-free cap to a small per-project amount, with no expansion step-up, and keep the exclusion of anything touching Building Systems or structure. Delete the deemed-consent provision in Section 8.02(i).",
+     "proposed_response": "Require Landlord's consent for all non-decorative Alterations. If a consent-free category is kept, cap it at a small per-project amount and exclude anything touching structure or Building Systems. Delete the deemed-consent mechanism in Section 8.02(i).",
      "quotes": [
       {
        "at": 25883,
-       "text": "Landlord will not unreasonably withhold or delay approval of written requests of Tenant to make Alterations that (1) do not affect the Building\u2019s exterior",
+       "text": "Landlord will not unreasonably withhold or delay approval of written requests of Tenant to make Alterations that (1) do not affect the Building\u2019s exterior (including the appearance), (2) do not adversely affect any Building Systems, (3) are non-structural",
        "verified": true
       },
       {
@@ -1847,15 +1847,15 @@
      "severity": "major",
      "standard": "Tenant needs Landlord's prior consent for all alterations except purely decorative work (painting, carpeting), uses contractors Landlord approves, and pays Landlord's reasonable review costs.",
      "topic": "Alterations",
-     "why": "The standard requires consent for all non-decorative work. Here consent is reasonableness-limited for all non-structural, non-systems work, the consent-free threshold is high, and a deemed-approval mechanism applies. Contractor approval and recovery of Landlord's review costs (8.02(x)) are broadly consistent."
+     "why": "The consent-free category is far above a low threshold and is not limited to purely decorative work. A reasonableness standard covers all non-structural work, and deemed consent further limits Landlord's control. Tenant does reimburse Landlord's third-party review costs."
     },
     {
      "dropped_quotes": 0,
      "id": "restoration",
      "kind": "issue",
-     "lease_says": "Tenant must remove listed Specialty Alterations (such as kitchens, raised floors, vaults and slab penetrations) at its cost, but one internal staircase is excluded, supplemental HVAC is not listed, and non-listed items escape removal if Landlord fails to designate them after Tenant's time-sensitive inquiry notice.",
+     "lease_says": "Tenant must remove listed Specialty Alterations (kitchens, raised floors, vaults, extra staircases, slab penetrations and similar items) at its cost and repair the damage. One internal staircase is excluded, and non-listed items escape removal if Landlord fails to designate them in response to Tenant's time-sensitive notice.",
      "model_status": "departs",
-     "proposed_response": "Add supplemental HVAC to the Specialty Alterations list and delete the single-staircase carve-out. Delete Section 8.01(iv) so that removal of specialty alterations applies whether or not Landlord designated them at the time of consent.",
+     "proposed_response": "Include all internal staircases and supplemental HVAC as enumerated Specialty Alterations. Delete the deemed waiver in Section 8.01(iv) so that Tenant removes specialty alterations at its cost whether or not Landlord designated them at the time of consent.",
      "quotes": [
       {
        "at": 30516,
@@ -1882,15 +1882,15 @@
      "severity": "major",
      "standard": "At the end of the term Tenant removes its specialty alterations (for example vaults, raised floors, internal staircases, supplemental HVAC) and repairs the damage at its cost.",
      "topic": "Surrender and restoration",
-     "why": "The standard requires removal of all specialty alterations whether or not designated. Here one internal staircase is carved out, supplemental HVAC is not enumerated, and Landlord loses the removal right for non-listed items if it misses the 8.01(iv) designation window."
+     "why": "The removal obligation exists for the enumerated items, but the first internal staircase is carved out. Supplemental HVAC is not enumerated and falls under the catch-all, which Landlord waives if it fails to designate the item when Tenant sends its notice."
     },
     {
      "dropped_quotes": 0,
      "id": "casualty",
      "kind": "issue",
-     "lease_says": "Landlord restores the core and shell and rent abates proportionately for the unusable space. Tenant may terminate (if 40% or more is Untenantable) where estimated restoration exceeds 15 months, would end in the last 8 months of the Term, or exceeds 4 months for a casualty in the last 12 months.",
+     "lease_says": "Landlord restores the core and shell, and rent abates only for the unusable portion. Tenant may terminate if estimated restoration exceeds 15 months, or on shorter triggers near the end of the term (restoration ending in the last 8 months, or more than 4 months for a casualty in the last 12 months), in each case if 40% or more of the Premises is Untenantable.",
      "model_status": "departs",
-     "proposed_response": "Delete the last-8-months and last-12-months/4-month termination triggers, or limit them to a casualty in the final year with restoration estimated to exceed at least 6 months. Keep 12 months or more as the general outside period and keep abatement tied to the unusable portion.",
+     "proposed_response": "Confirm Landlord accepts the end-of-term termination triggers in Section 11.02(x)(ii) and (iii). Otherwise require that any Tenant termination right be triggered only by restoration exceeding at least 12 months, and keep abatement tied to the unusable part of the Premises.",
      "quotes": [
       {
        "at": 51059,
@@ -1898,8 +1898,8 @@
        "verified": true
       },
       {
-       "at": 53759,
-       "text": "(i) Landlord\u2019s Restoration Period exceeds fifteen (15) months from the date of such statement, (ii) Landlord\u2019s Restoration Period would expire during the last eight (8) months of the Term",
+       "at": 53753,
+       "text": "If (x)(i) Landlord\u2019s Restoration Period exceeds fifteen (15) months from the date of such statement, (ii) Landlord\u2019s Restoration Period would expire during the last eight (8) months of the Term",
        "verified": true
       },
       {
@@ -1917,15 +1917,15 @@
      "severity": "major",
      "standard": "Landlord restores the building and premises after a casualty. Tenant may terminate only if restoration is not finished within a long outside period (12 months or more), and rent abates only for the unusable space.",
      "topic": "Fire or other casualty",
-     "why": "The general 15-month trigger and the proportional abatement are consistent. The end-of-term triggers, however, let Tenant terminate where restoration takes well under 12 months."
+     "why": "The main trigger (15 months) and the abatement match the standard. The end-of-term triggers let Tenant terminate where restoration takes well under 12 months."
     },
     {
      "dropped_quotes": 0,
      "id": "holdover",
      "kind": "issue",
-     "lease_says": "Holdover rent is 150% for the first 60 days and 200% thereafter, but Tenant is liable for Landlord's damages (including new-tenant claims) only if the holdover exceeds 180 days.",
+     "lease_says": "Holdover rent is 150% for 60 days and then 200%, but Tenant is liable for Landlord's damages, including New Tenant claims, only if the holdover continues for more than 180 days.",
      "model_status": "departs",
-     "proposed_response": "Make Tenant liable for all of Landlord's damages, including consequential damages and new-tenant claims, if the holdover continues more than 30 days after Landlord's notice, in place of the 180-day threshold.",
+     "proposed_response": "Reduce the threshold for Tenant's liability for Landlord's damages, including New Tenant claims and lost bargain, to a short grace period (no more than 30 days) after Landlord's notice. Keep the 150%/200% holdover rent schedule.",
      "quotes": [
       {
        "at": 60530,
@@ -1933,8 +1933,8 @@
        "verified": true
       },
       {
-       "at": 59620,
-       "text": "(B) if such holdover continues for more than one hundred eighty (180) days, (a) Tenant shall be liable to Landlord for and indemnify Landlord against all costs, claims, loss or liability resulting from such holdover",
+       "at": 59624,
+       "text": "if such holdover continues for more than one hundred eighty (180) days, (a) Tenant shall be liable to Landlord for and indemnify Landlord against all costs, claims, loss or liability resulting from such holdover",
        "verified": true
       }
      ],
@@ -1945,45 +1945,13 @@
      "severity": "major",
      "standard": "If Tenant stays after the term ends, it pays at least 150 percent of the last rent, rising over time, and is liable for Landlord's damages if it stays past a short grace period after notice.",
      "topic": "Holding over",
-     "why": "The rent levels meet the standard. However, the 180-day threshold before damages liability is far longer than a short grace period after notice."
-    },
-    {
-     "dropped_quotes": 0,
-     "id": "options",
-     "kind": "issue",
-     "lease_says": "The lease grants a renewal option (Article 49), an offer space option (Article 50) and an expansion right (Article 52), but the terms of all three articles are redacted.",
-     "model_status": "departs",
-     "proposed_response": "Confirm each of the renewal, offer space and expansion rights has been approved by Landlord. Price the renewal at 100% of fair market rent, make all options personal to UiPath, Inc. and its permitted affiliates, and void them while Tenant is in default.",
-     "quotes": [
-      {
-       "at": 14925,
-       "text": "or be extended pursuant to Article 49 below",
-       "verified": true
-      },
-      {
-       "at": 27389,
-       "text": "from and after the Expansion Space Inclusion Date, $400,000.00 (Subject to CPI Increases)",
-       "verified": true
-      }
-     ],
-     "reasons": [],
-     "sections": [
-      "2.01",
-      "49",
-      "50",
-      "52",
-      "8.01(i)"
-     ],
-     "severity": "major",
-     "standard": "Tenant has no renewal, expansion, first-offer or early termination rights unless Landlord approves them, and any renewal is at fair market rent.",
-     "topic": "Renewal, expansion and first-offer rights",
-     "why": "The lease gives Tenant renewal, first-offer and expansion rights, which departs from the standard. Because the articles are redacted, we cannot confirm renewal rent, personal-to-tenant limits or default conditions."
+     "why": "The holdover rent meets the standard. The 180-day threshold before damages liability is far longer than a short grace period after notice, so Tenant has no damages exposure for most holdovers."
     },
     {
      "dropped_quotes": 0,
      "id": "assignment",
      "kind": "check",
-     "lease_says": "Article 4 (Assignment/Subletting) is redacted in full as \"4.01[***]\", so the operative assignment and subletting terms cannot be read.",
+     "lease_says": "Article 4 (Assignment/Subletting) is redacted in its entirety in the public filing (\"4.01[***]\").",
      "model_status": "not_found",
      "proposed_response": "",
      "quotes": [],
@@ -1996,13 +1964,78 @@
      "severity": "critical",
      "standard": "Tenant may not assign the lease or sublet any part of the premises without Landlord's prior written consent. Before consenting, Landlord may take back (recapture) the space. If Tenant sublets or assigns for more than it pays, Landlord receives at least half of the profit.",
      "topic": "Assignment and subletting",
-     "why": "The point cannot be tested against the standard because the text is redacted. The defined-terms index refers to \"Leaseback Area\" (4.02), \"Affiliate\" (4.10(a)) and \"controls\" (4.10(b)), which suggests a recapture right and a consent-free affiliate or control-transfer exception. Their terms, and any profit-sharing split, are not visible."
+     "why": "The operative text cannot be reviewed. The index refers to defined terms \"Affiliate\" (4.10(a)) and \"Leaseback Area\" (4.02), which suggests affiliate transfer and recapture provisions exist, but their terms are unknown. Obtain the unredacted Article 4 before taking a position."
+    },
+    {
+     "dropped_quotes": 0,
+     "id": "security_deposit",
+     "kind": "check",
+     "lease_says": "Tenant posts cash or an unconditional irrevocable letter of credit, which Landlord may draw after a default beyond notice and cure, or immediately on bankruptcy or insolvency events.",
+     "model_status": "consistent",
+     "proposed_response": "",
+     "quotes": [
+      {
+       "at": 231487,
+       "text": "Upon the execution and delivery of this Lease, Tenant shall deliver to Landlord either cash or an unconditional irrevocable letter of credit",
+       "verified": true
+      },
+      {
+       "at": 233843,
+       "text": "If Tenant defaults in the full and prompt payment and performance of any of Tenant\u2019s covenants and obligations under this Lease, including, but not limited to, the payment of Fixed Annual Rent and Additional Rent, beyond notice",
+       "verified": true
+      }
+     ],
+     "reasons": [
+      "The review marked this call as low confidence."
+     ],
+     "sections": [
+      "51.01",
+      "51.02"
+     ],
+     "severity": "critical",
+     "standard": "Tenant posts cash or an unconditional letter of credit, Landlord may draw on it after a default, and any reduction (burn-down) applies only if Tenant has never been in default.",
+     "topic": "Security deposit",
+     "why": "The form of security and the draw rights match the standard. The amount and any burn-down terms are redacted in 51.01 ('[***]'), so we cannot confirm that reductions are conditioned on no default."
+    },
+    {
+     "dropped_quotes": 0,
+     "id": "options",
+     "kind": "check",
+     "lease_says": "The lease grants a Renewal Option (Article 49), an Offer Space Option (Article 50) and an Expansion Right (Article 52), but the text of all three articles is redacted.",
+     "model_status": "departs",
+     "proposed_response": "Confirm each of the renewal, offer space and expansion options is approved by Landlord. Price renewal at fair market rent, make each option personal to the original Tenant, and void each option while Tenant is in default.",
+     "quotes": [
+      {
+       "at": 14925,
+       "text": "or be extended pursuant to Article 49 below",
+       "verified": true
+      },
+      {
+       "at": 27389,
+       "text": "from and after the Expansion Space Inclusion Date, $400,000.00 (Subject to CPI Increases)",
+       "verified": true
+      }
+     ],
+     "reasons": [
+      "The review marked this call as low confidence."
+     ],
+     "sections": [
+      "2.01",
+      "8.01(i)",
+      "49",
+      "50",
+      "52"
+     ],
+     "severity": "major",
+     "standard": "Tenant has no renewal, expansion, first-offer or early termination rights unless Landlord approves them, and any renewal is at fair market rent.",
+     "topic": "Renewal, expansion and first-offer rights",
+     "why": "The lease gives Tenant renewal, first-offer and expansion rights, which depart from the standard. Renewal rent, personal-to-tenant and default conditions cannot be reviewed because of the redaction."
     },
     {
      "dropped_quotes": 0,
      "id": "operating_expenses",
      "kind": "consistent",
-     "lease_says": "From the Rent Commencement Date, Tenant pays its Percentage of all Expenses each Expense Year, with no base year and no cap, and Expenses are grossed up for unfurnished services.",
+     "lease_says": "Tenant pays its Percentage of all Expenses each Expense Year, with no base year and no cap, and Expenses are grossed up for unfurnished services.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -2025,42 +2058,13 @@
      "severity": "critical",
      "standard": "Tenant pays its proportionate share of increases in operating expenses over a base year, with no cap on controllable expenses.",
      "topic": "Operating expense escalations",
-     "why": "Tenant pays its share of total Expenses rather than only increases over a base year, with no cap, which gives Landlord more than the standard. The Percentage definition is partly redacted, but this does not affect the structure."
-    },
-    {
-     "dropped_quotes": 0,
-     "id": "security_deposit",
-     "kind": "consistent",
-     "lease_says": "Tenant posts cash or an unconditional irrevocable letter of credit, which Landlord may draw after a default beyond notice and cure (or immediately in bankruptcy or on failure to renew or replace it).",
-     "model_status": "consistent",
-     "proposed_response": "",
-     "quotes": [
-      {
-       "at": 231487,
-       "text": "Upon the execution and delivery of this Lease, Tenant shall deliver to Landlord either cash or an unconditional irrevocable letter of credit",
-       "verified": true
-      },
-      {
-       "at": 233843,
-       "text": "If Tenant defaults in the full and prompt payment and performance of any of Tenant\u2019s covenants and obligations under this Lease, including, but not limited to, the payment of Fixed Annual Rent and Additional Rent, beyond notice",
-       "verified": true
-      }
-     ],
-     "reasons": [],
-     "sections": [
-      "51.01",
-      "51.02"
-     ],
-     "severity": "critical",
-     "standard": "Tenant posts cash or an unconditional letter of credit, Landlord may draw on it after a default, and any reduction (burn-down) applies only if Tenant has never been in default.",
-     "topic": "Security deposit",
-     "why": "The security form and draw right match the standard. However, the amount and the balance of Section 51.01 are redacted, so we cannot confirm whether a burn-down exists or is conditioned on no default."
+     "why": "A full pass-through with no base year and no cap gives Landlord more than the standard. However, the definition of 'Percentage' in 48.02(i) has a redacted sentence that may modify the share."
     },
     {
      "dropped_quotes": 0,
      "id": "landlord_liability",
      "kind": "consistent",
-     "lease_says": "Tenant's recovery is limited to Landlord's interest in the land and Building and its proceeds, and neither party is liable for consequential damages except Tenant's holdover liability.",
+     "lease_says": "Recovery against Landlord is limited to its interest in the land and Building and the proceeds, and neither party is liable for consequential damages, except Tenant's holdover liability.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -2084,19 +2088,19 @@
      "severity": "critical",
      "standard": "Landlord's liability is limited to its interest in the building, and Landlord is never liable for consequential damages.",
      "topic": "Limit on Landlord's liability",
-     "why": "This matches the standard. The consequential-damages waiver is mutual but expressly preserves Tenant's holdover exposure under 12.02."
+     "why": "This matches the standard. The consequential damages waiver is mutual, but it preserves Tenant's holdover exposure under 12.02."
     },
     {
      "dropped_quotes": 0,
      "id": "default",
      "kind": "consistent",
-     "lease_says": "Tenant has 5 Business Days after notice to cure rent defaults and 30 days after notice to cure other defaults (extended only while it diligently cures), after which Landlord may terminate on 5 Business Days' notice.",
+     "lease_says": "Tenant has 5 Business Days after notice to pay rent and 30 days after notice to cure other defaults, extended only while it diligently cures, followed by Landlord's 5 Business Day termination notice.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 17524,
-       "text": "Landlord may terminate this Lease on five (5) Business Days\u2019 notice: (a) if Fixed Annual Rent or Additional Rent is not paid within five (5) Business Days after written notice from Landlord",
+       "at": 17597,
+       "text": "if Fixed Annual Rent or Additional Rent is not paid within five (5) Business Days after written notice from Landlord",
        "verified": true
       },
       {
@@ -2112,13 +2116,13 @@
      "severity": "critical",
      "standard": "Tenant has about 5 to 10 days after notice to cure a failure to pay rent, and 30 days after notice to cure other defaults, extended only while Tenant diligently pursues a cure.",
      "topic": "Tenant default and cure periods",
-     "why": "The cure periods fall within the standard and the extension is subject to a diligence condition. The separate 5 Business Day termination notice is the customary conditional-limitation notice rather than a second cure notice, but the partner may wish to confirm this."
+     "why": "The cure periods are within the standard. The only additional notice is Landlord's own 5 Business Day conditional-limitation termination notice, not a second default notice, but the partner should confirm this is acceptable."
     },
     {
      "dropped_quotes": 0,
      "id": "taxes",
      "kind": "consistent",
-     "lease_says": "From the Rent Commencement Date, Tenant pays Tenant's Share of all Real Estate Taxes, computed without the benefit of abatements or exemptions.",
+     "lease_says": "Tenant pays Tenant's Share of all Real Estate Taxes each Tax Year from the Rent Commencement Date, with no base year, and the taxes are computed without regard to incentive abatements.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -2141,13 +2145,13 @@
      "severity": "major",
      "standard": "Tenant pays its proportionate share of increases in real estate taxes over a base tax year.",
      "topic": "Real estate tax escalations",
-     "why": "Tenant pays its share of total taxes, with no base year and no reduction for Landlord-only abatements, which gives Landlord more than the standard. Part of the Tenant's Share definition is redacted."
+     "why": "A full tax pass-through with no base year, ignoring abatements, gives Landlord more than the standard. However, a redacted sentence in the Tenant's Share definition (32.01(a)(i)) could adjust the share."
     },
     {
      "dropped_quotes": 0,
      "id": "insurance",
      "kind": "consistent",
-     "lease_says": "Tenant carries $10 million per-occurrence CGL naming Landlord and its designees as additional insureds, and both parties obtain waivers of subrogation on their property policies.",
+     "lease_says": "Tenant carries $10 million per occurrence CGL naming Landlord and its designees as additional insureds, and both parties obtain waivers of subrogation.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -2163,31 +2167,32 @@
       },
       {
        "at": 177115,
-       "text": "pursuant to which the respective insurance companies waive subrogation against each other and any other parties, if agreed to in writing prior to any damage or destruction.",
+       "text": "pursuant to which the respective insurance companies waive subrogation against each other and any other parties",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
       "43.02(a)",
-      "43.05"
+      "43.05",
+      "11.01"
      ],
      "severity": "major",
      "standard": "Tenant carries commercial general liability insurance of at least 5 million dollars per occurrence (primary plus umbrella), names Landlord and its managing agent as additional insureds, and both parties waive subrogation.",
      "topic": "Tenant's insurance",
-     "why": "The limits exceed the $5 million standard and the waiver of subrogation is mutual. The managing agent is not named expressly but can be covered as a Landlord \"designee\"."
+     "why": "The limits exceed the $5 million standard and the waiver of subrogation is mutual. The managing agent is not named expressly but is covered as a Landlord 'designee'."
     },
     {
      "dropped_quotes": 0,
      "id": "indemnity",
      "kind": "consistent",
-     "lease_says": "Tenant indemnifies broadly for its acts, accidents in the Premises and its business, while Landlord indemnifies only for its negligence or willful misconduct in operating the common areas.",
+     "lease_says": "Tenant broadly indemnifies for its acts, occurrences in the Premises and its business, while Landlord indemnifies only for its negligence or willful misconduct in operating the common areas.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 90449,
-       "text": "Tenant shall indemnify, defend and hold harmless Landlord, all Lessors and all Mortgagees",
+       "at": 90821,
+       "text": "(i) any act, omission or negligence of Tenant or any person claiming through or under Tenant or any of their respective partners, directors, officers, agents, employees or contractors",
        "verified": true
       },
       {
@@ -2204,13 +2209,13 @@
      "severity": "major",
      "standard": "Tenant indemnifies Landlord for claims arising from Tenant's use of the premises and its people. Landlord's indemnity, if any, covers only its negligence or willful misconduct.",
      "topic": "Indemnification",
-     "why": "Tenant's indemnity is not limited to gross negligence, and Landlord's indemnity is confined to negligence or willful misconduct, which matches the standard."
+     "why": "Tenant's indemnity is broad and not limited to gross negligence. Landlord's indemnity is limited to its negligence or willful misconduct, which matches the standard."
     },
     {
      "dropped_quotes": 0,
      "id": "law_and_jury",
      "kind": "consistent",
-     "lease_says": "New York law governs and both parties waive a jury trial.",
+     "lease_says": "New York law governs and both parties waive trial by jury.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -2238,23 +2243,24 @@
    ],
    "label": "Manhattan office lease, 2021 (parts redacted)",
    "meta": {
-    "cost_usd": 0.598,
+    "attempts": 1,
+    "cost_usd": 0.5904,
     "input_tokens": 94900,
-    "latency_s": 85.92,
+    "latency_s": 84.31,
     "model": "claude-opus-5-5",
-    "output_tokens": 10920
+    "output_tokens": 10539
    },
    "parties": {
-    "dated": "As of September 24, 2021",
+    "dated": "September 24, 2021",
     "landlord": "One Vanderbilt Owner LLC",
     "premises": "Entire 60th floor (deemed 26,363 rentable square feet), One Vanderbilt Avenue, New York, New York",
     "tenant": "UiPath, Inc."
    },
    "summary": {
-    "check": 1,
-    "consistent": 8,
+    "check": 3,
+    "consistent": 7,
     "critical_issues": 0,
-    "issue": 6,
+    "issue": 5,
     "quotes_dropped": 0,
     "quotes_verified": 33
    },
@@ -2269,9 +2275,9 @@
      "dropped_quotes": 0,
      "id": "assignment",
      "kind": "issue",
-     "lease_says": "Transfers generally need consent, with recapture (13.3, 13.4) and a 50% profit share (13.10), but affiliate transfers, mergers, asset or stock sales and changes in control need no consent, and recapture and profit sharing do not apply to them.",
+     "lease_says": "Landlord's consent, recapture rights and a 50 percent profit share apply to third-party transfers, but Tenant may assign or sublet to Affiliates without consent, recapture or profit sharing and with no net worth test, and may let Space Occupants use up to 20 percent of the Premises without consent.",
      "model_status": "departs",
-     "proposed_response": "Add a net worth test to the affiliate exception in 13.1(b); limit 13.1(c) to a merger or consolidation, or a sale of substantially all assets including this Lease, that meets a net worth test, and delete Change in Control as a consent-free transfer; delete the deemed-waiver mechanism in 13.3 and 13.4.",
+     "proposed_response": "Add a tangible net worth test to the Section 13.1(b) Affiliate exception, matching the test in Section 13.1(c). Delete or narrow the Section 13.1(e) Space Occupant carve-out. Delete the deemed waiver of Landlord's recapture rights in Sections 13.3 and 13.4.",
      "quotes": [
       {
        "at": 172081,
@@ -2279,73 +2285,67 @@
        "verified": true
       },
       {
-       "at": 174248,
-       "text": "(iii) transfers resulting in a Change in Control shall not require Landlord\u2019s consent under this Article 13",
+       "at": 173696,
+       "text": "For the avoidance of doubt, the terms and conditions of Section 13.3, 13.4 and 13.10 shall not apply to an assignment of this Lease or a subletting of the Premises permitted without Landlord\u2019s consent under this Section 13.1(b).",
        "verified": true
       },
       {
-       "at": 176553,
-       "text": "For the avoidance of doubt, the terms and conditions of Section 13.3, 13.4 and 13.10 shall not apply to transfers that are permitted without Landlord\u2019s consent under this Section 13.1(c).",
+       "at": 201533,
+       "text": "in the case of a sublease, fifty percent (50%) of the excess",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
       "13.1(b)",
-      "13.1(c)",
-      "13.10"
+      "13.1(e)",
+      "13.10(b)"
      ],
      "severity": "critical",
      "standard": "Tenant may not assign the lease or sublet any part of the premises without Landlord's prior written consent. Before consenting, Landlord may take back (recapture) the space. If Tenant sublets or assigns for more than it pays, Landlord receives at least half of the profit.",
      "topic": "Assignment and subletting",
-     "why": "The affiliate exception has no net worth test, and the consent-free category goes beyond merger and affiliate transfers to include stock or asset sales and any Change in Control. Space Occupants may also take up to 20% of the premises without consent (13.1(e)). Landlord's recapture rights are also deemed waived if Landlord does not answer a second notice within 5 business days."
+     "why": "The playbook allows consent-free transfers only for mergers or affiliate transfers that meet a net worth test. Here the Section 13.1(b) affiliate exception has no net worth test, the Space Occupant carve-out adds a further consent-free category, and the 5-business-day deemed waiver of recapture weakens Landlord's recapture right. The 13.1(c) merger and change-in-control exception does carry a net worth test."
     },
     {
      "dropped_quotes": 0,
      "id": "security_deposit",
      "kind": "issue",
-     "lease_says": "Tenant posts cash and then an unconditional letter of credit, Landlord may draw on any default without notice, and the deposit burns down if no Event of Default then exists and a net worth test is met.",
+     "lease_says": "Tenant posts cash replaced by an unconditional letter of credit that Landlord may draw on after any default without notice, and the deposit burns down if no Event of Default then exists and a net worth test is met.",
      "model_status": "departs",
-     "proposed_response": "Condition each reduction on no Event of Default (and no monetary default after notice) ever having occurred, delete the later-satisfaction catch-up in 20.22(c), and delete the reference to the nonexistent Expansion Option.",
+     "proposed_response": "Condition each reduction on no Event of Default (and no monetary default after notice) having occurred at any time during the term, in addition to the existing net worth test.",
      "quotes": [
-      {
-       "at": 286095,
-       "text": "Tenant shall furnish to Landlord, at Tenant\u2019s sole cost and expense, a clean, irrevocable and unconditional letter of credit",
-       "verified": true
-      },
       {
        "at": 292315,
        "text": "provided (i) no Event of Default shall then exist and (ii) Tenant shall then have liquid assets and a tangible net worth, determined in accordance with GAAP, no less than Tenant\u2019s liquid assets and tangible net worth so determined as of the date hereof",
+       "verified": true
+      },
+      {
+       "at": 290093,
+       "text": "Landlord shall have the right from time to time, without notice and without prejudice to any other remedy Landlord may have on account thereof, and upon presentation of a certificate of demand, to draw upon the Cash Deposit or any Letter",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "20.22(a)",
-      "20.22(b)",
-      "20.22(c)"
+      "20.22(c)",
+      "20.22(b)"
      ],
      "severity": "critical",
      "standard": "Tenant posts cash or an unconditional letter of credit, Landlord may draw on it after a default, and any reduction (burn-down) applies only if Tenant has never been in default.",
      "topic": "Security deposit",
-     "why": "The burn-down requires only that no Event of Default exist on the reduction date, not that Tenant has never defaulted, and it can be reinstated later once the conditions are met. The deposit amount, burn-down date and Burn Down Amount are redacted. Section 20.22(c) refers to an Expansion Option that does not appear in the lease."
+     "why": "Draw rights and the letter of credit are consistent with the standard, but the burn-down is conditioned only on no Event of Default existing at the time, not on Tenant never having defaulted. The deposit amount, burn-down date and Burn Down Amount are redacted."
     },
     {
      "dropped_quotes": 0,
      "id": "use",
      "kind": "issue",
-     "lease_says": "Permitted use covers wet and dry life sciences laboratories with ancillary offices (Qualified Life Science Uses), plus a fitness center and other ancillary uses, while the IDA Rider describes general and administrative use.",
+     "lease_says": "The Premises may be used for wet and dry laboratory, life sciences research and development, and related office uses (Qualified Life Science Uses), while the IDA Rider describes general and administrative use.",
      "model_status": "departs",
-     "proposed_response": "Limit permitted use to general, executive and administrative offices, conformed to Exhibit H \u00b611; if laboratory use is required, list it as a specific approved exception subject to the Lab Rules and Regulations, the hazardous substances limits and the Section 20.33 requirements.",
+     "proposed_response": "Limit the permitted use to general, executive and administrative offices. List any laboratory use the tenant needs as a specific, approved exception subject to the Lab Rules and Regulations. Conform Section 10.1 to Exhibit H, Section 11.",
      "quotes": [
       {
        "at": 111010,
        "text": "Tenant shall use and occupy the Premises only for one or more of the following uses: (i) \u201cturnkey\u201d floor space outfitted in a manner consistent with wet laboratory space dedicated to life sciences research and development",
-       "verified": true
-      },
-      {
-       "at": 112854,
-       "text": "(iii) one Fitness Center (subject to Section 10.8)",
        "verified": true
       },
       {
@@ -2357,21 +2357,54 @@
      "reasons": [],
      "sections": [
       "10.1",
-      "10.2",
-      "Exhibit H \u00b611"
+      "Exhibit H, Section 11"
      ],
      "severity": "major",
      "standard": "The premises are used only for general, executive and administrative offices, with no change of use without Landlord's consent.",
      "topic": "Permitted use",
-     "why": "The lease allows laboratory uses beyond general office. The IDA Rider's general and administrative description does not clearly override Section 10.1, so the two need to be reconciled."
+     "why": "Permitted use goes well beyond general, executive and administrative offices to include wet laboratories. The Section 10.1 grant and the narrower IDA Rider use clause are not reconciled."
+    },
+    {
+     "dropped_quotes": 0,
+     "id": "alterations",
+     "kind": "issue",
+     "lease_says": "Consent is required for all alterations except decorative work under $50,000, but consent cannot be unreasonably withheld unless the work is a Material Alteration (structure, exterior, building systems and similar), and silence after a reminder notice is deemed approval.",
+     "model_status": "departs",
+     "proposed_response": "Require Landlord's prior consent, in its discretion, for all non-decorative Alterations. Delete the deemed-approval mechanism in Section 8.1. Keep the decorative exception capped at a small cost per project and excluding anything touching building systems or structure.",
+     "quotes": [
+      {
+       "at": 90151,
+       "text": "it being agreed that Landlord shall not unreasonably withhold, condition or delay its consent if the proposed Alteration is not a Material Alteration.",
+       "verified": true
+      },
+      {
+       "at": 91566,
+       "text": "Landlord\u2019s prior written consent shall not be required for any Alterations that are purely decorative or cosmetic Alterations (and that are not otherwise Material Alterations) such as painting, wall coverings and floor coverings and that do not cost in excess of Fifty Thousand and 00/100 Dollars ($50,000.00).",
+       "verified": true
+      },
+      {
+       "at": 94268,
+       "text": "If Landlord fails to respond to such notice within five (5) Business Days after receipt by Landlord, then Tenant\u2019s plans and specifications for which the request is submitted shall be deemed to be approved by Landlord",
+       "verified": true
+      }
+     ],
+     "reasons": [],
+     "sections": [
+      "8.1(e)",
+      "8.1"
+     ],
+     "severity": "major",
+     "standard": "Tenant needs Landlord's prior consent for all alterations except purely decorative work (painting, carpeting), uses contractors Landlord approves, and pays Landlord's reasonable review costs.",
+     "topic": "Alterations",
+     "why": "Landlord's discretion is limited to structural and building-system work, and a deemed-approval mechanism applies, both of which go beyond the standard. Contractor approval and review-cost reimbursement are consistent with the standard."
     },
     {
      "dropped_quotes": 0,
      "id": "restoration",
      "kind": "issue",
-     "lease_says": "Tenant must remove Specialty Alterations only if Landlord made removal a condition of its consent.",
+     "lease_says": "Tenant must remove Specialty Alterations and restore only where Landlord made removal a condition of its consent.",
      "model_status": "departs",
-     "proposed_response": "Require Tenant to remove all Specialty Alterations and restore at its cost at the end of the term, whether or not Landlord designated them at the time of consent, including work deemed approved and Tenant's Work under Exhibit C.",
+     "proposed_response": "Require Tenant to remove all Specialty Alterations and repair any damage at its cost at the end of the term, whether or not Landlord designated them at the time of consent.",
      "quotes": [
       {
        "at": 104724,
@@ -2379,53 +2412,57 @@
        "verified": true
       },
       {
-       "at": 92247,
-       "text": "(iii) to agree to remove, at or prior to the Expiration Date, any item of work shown on such plans of an unusual nature, such as, but not limited to, internal stairways, pantries, lavatories, vaults, special flooring for computer areas and the like (\u201cSpecialty Alterations\u201d)",
+       "at": 92253,
+       "text": "to agree to remove, at or prior to the Expiration Date, any item of work shown on such plans of an unusual nature, such as, but not limited to, internal stairways, pantries, lavatories, vaults, special flooring for computer areas and the like (\u201cSpecialty Alterations\u201d)",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
       "8.6(b)",
-      "8.1(e)",
-      "20.4(b)"
+      "8.1(e)"
      ],
      "severity": "major",
      "standard": "At the end of the term Tenant removes its specialty alterations (for example vaults, raised floors, internal staircases, supplemental HVAC) and repairs the damage at its cost.",
      "topic": "Surrender and restoration",
-     "why": "If Landlord did not designate an item at the time of consent, Tenant has no removal obligation. This includes items approved by deemed approval under 8.1. Exhibit C (Work Letter) is redacted, so any designation in it cannot be confirmed."
+     "why": "Removal turns on Landlord designating the item at the time of consent. Undesignated specialty work, and work under deemed approvals, need not be removed."
     },
     {
      "dropped_quotes": 0,
      "id": "indemnity",
      "kind": "issue",
-     "lease_says": "Tenant gives a broad indemnity carved out only for Landlord's gross negligence or willful misconduct, while Landlord indemnifies Tenant for any work it performs in the Building and for its negligent or wrongful acts.",
+     "lease_says": "Tenant gives a broad indemnity, but Landlord indemnifies Tenant for any claims arising from Landlord's work anywhere in the Building, whether or not negligent, and for any negligent or otherwise wrongful act.",
      "model_status": "departs",
      "proposed_response": "Delete clause (i) of Section 11.14 and limit Landlord's indemnity to claims caused by the negligence or willful misconduct of Landlord or its employees, agents or contractors.",
      "quotes": [
       {
        "at": 153272,
-       "text": "Landlord shall indemnify, defend and hold harmless the Tenant Parties from and against any and all Claims against any of such parties arising from (i) the performance by Landlord or any of its employees, agents or contractors of any alterations, improvements, repairs or other work in the Building or the Premises and (ii) any negligent or otherwise wrongful act or omission of Landlord",
+       "text": "Landlord shall indemnify, defend and hold harmless the Tenant Parties from and against any and all Claims against any of such parties arising from (i) the performance by Landlord or any of its employees, agents or contractors of any alterations, improvements, repairs or other work in the Building or the Premises and (ii) any negligent or otherwise wrongful act or omission of Landlord or any of its employees, agents or contractors",
+       "verified": true
+      },
+      {
+       "at": 129731,
+       "text": "agrees to indemnify and save harmless the Landlord Parties from and against all claims of whatever nature arising from or claimed to have arisen from (i) any act, omission or negligence of the Tenant Parties",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "11.1(a)",
-      "11.14"
+      "11.14",
+      "11.1(a)"
      ],
      "severity": "major",
      "standard": "Tenant indemnifies Landlord for claims arising from Tenant's use of the premises and its people. Landlord's indemnity, if any, covers only its negligence or willful misconduct.",
      "topic": "Indemnification",
-     "why": "Clause (i) of the Landlord indemnity is not tied to negligence; it covers any claim arising from Landlord work anywhere in the Building. The phrase \"otherwise wrongful act\" also goes beyond negligence or willful misconduct."
+     "why": "Clause (i) of Landlord's indemnity is not tied to negligence or willful misconduct, and clause (ii) extends to \"otherwise wrongful\" acts. Tenant's indemnity is consistent with the standard."
     },
     {
      "dropped_quotes": 0,
      "id": "casualty",
      "kind": "issue",
-     "lease_says": "Landlord restores, Tenant may generally terminate only if restoration exceeds 18 months, and rent abates only for the unusable part, but Tenant may also terminate after an uninsured substantial casualty needing more than 30 days or a last-year casualty needing more than 180 days.",
+     "lease_says": "Tenant may terminate if restoration is not done within 18 months, but Section 12.4 also lets Tenant terminate after a substantial uninsured casualty that cannot be repaired within 30 days; rent abates only for the unusable part.",
      "model_status": "departs",
-     "proposed_response": "Delete Tenant's termination right in Section 12.4 (or limit it to Landlord's election not to restore), and limit the last-year termination right to damage that cannot be restored before the Expiration Date and affects a substantial part of the Premises.",
+     "proposed_response": "Delete Tenant's termination right under Section 12.4, or make it Landlord's right only, so that Tenant's termination trigger for any casualty is restoration not completed within at least 12 months (other than in the last year of the term).",
      "quotes": [
       {
        "at": 163560,
@@ -2433,30 +2470,34 @@
        "verified": true
       },
       {
-       "at": 157267,
-       "text": "cannot reasonably be expected to be repaired or restored within one hundred eighty (180) days from the time that repair or restoration work would commence or prior to the Expiration Date, whichever first occurs, then Landlord or Tenant shall have the right",
+       "at": 160582,
+       "text": "unless such repair and restoration is completed within eighteen (18) months from the date of the casualty, Tenant shall have the right to terminate this Lease",
+       "verified": true
+      },
+      {
+       "at": 161681,
+       "text": "shall be abated on a pro rata basis according to the part of the Premises that is usable by Tenant.",
        "verified": true
       }
      ],
      "reasons": [],
      "sections": [
-      "12.1",
+      "12.4",
       "12.2",
-      "12.3",
-      "12.4"
+      "12.3"
      ],
      "severity": "major",
      "standard": "Landlord restores the building and premises after a casualty. Tenant may terminate only if restoration is not finished within a long outside period (12 months or more), and rent abates only for the unusable space.",
      "topic": "Fire or other casualty",
-     "why": "Sections 12.4 and the last-year clause in 12.1 give Tenant termination triggers well under 12 months. The main 18-month trigger and the abatement rule match the standard."
+     "why": "The 18-month trigger and the abatement terms match the standard. The Section 12.4 tenant termination right for uninsured casualty is far shorter than 12 months, and Section 12.1 adds a 180-day last-year termination right."
     },
     {
      "dropped_quotes": 0,
      "id": "options",
      "kind": "issue",
-     "lease_says": "Tenant has a 5-year renewal at fair market rent (with a floor at the expiring rent), a right of first offer on the balance of the 3rd floor at fair market rent, and a termination right if the premises are not delivered by the Outside Date.",
+     "lease_says": "Tenant has a 5-year renewal at fair market rent (with a floor at the expiring rent), a right of first offer on the balance of the 3rd floor at fair market rent, and a delivery-delay termination right, each conditioned on no default.",
      "model_status": "departs",
-     "proposed_response": "Confirm the client has approved the renewal, ROFO and delivery termination rights; make the options personal to the named tenant and its approved affiliates only; keep them void during any default; and correct the Section 3.4 cross-references.",
+     "proposed_response": "Confirm the Renewal Option, the ROFO Option and the Section 3.1(b) and 17.1(d) termination rights are approved. Make the options personal to the originally named tenant only, keep the fair market rent pricing, and fix the Section 3.3/3.4 cross-references.",
      "quotes": [
       {
        "at": 22467,
@@ -2464,13 +2505,13 @@
        "verified": true
       },
       {
-       "at": 312959,
-       "text": "if at any time balance of the 3rd floor of the Building becomes \"available for leasing\" or is anticipated to become \"available for leasing\", and Landlord desires to lease such space, Landlord shall (i) so notify Tenant",
+       "at": 23891,
+       "text": "Annual Fixed Rent for the Renewal Term shall be the Fair Market Rent for the Premises as of the commencement of the Renewal Term",
        "verified": true
       },
       {
-       "at": 19739,
-       "text": "Tenant, in Tenant\u2019s sole discretion, shall have the right to terminate this Lease upon written notice",
+       "at": 312959,
+       "text": "if at any time balance of the 3rd floor of the Building becomes \"available for leasing\" or is anticipated to become \"available for leasing\", and Landlord desires to lease such space, Landlord shall (i) so notify Tenant",
        "verified": true
       }
      ],
@@ -2484,13 +2525,13 @@
      "severity": "major",
      "standard": "Tenant has no renewal, expansion, first-offer or early termination rights unless Landlord approves them, and any renewal is at fair market rent.",
      "topic": "Renewal, expansion and first-offer rights",
-     "why": "The lease grants renewal, first-offer and delivery-related termination rights. Renewal pricing at fair market rent with a floor is acceptable. \"Original Tenant\" includes successors under the consent-free 13.1(c) transfers, so the options are not personal to the named tenant. Cross-references to Section 3.4 point to provisions numbered 3.3 and need correcting."
+     "why": "The lease grants renewal, first-offer and termination rights, so each needs approval. The pricing at fair market rent and the default conditions are favorable, but \"Original Tenant\" includes Section 13.1(c) successors. Section numbering is inconsistent: the options are headed 3.3.x but cross-referenced as 3.4."
     },
     {
      "dropped_quotes": 0,
      "id": "insurance",
      "kind": "check",
-     "lease_says": "Tenant carries CGL (primary plus umbrella) naming Landlord and its managing agent as additional insureds, and the waiver of subrogation is mutual.",
+     "lease_says": "Tenant carries primary plus umbrella commercial general liability insurance at a redacted per-occurrence limit, names Landlord and its managing agent as additional insureds, and the waiver of subrogation is mutual.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -2521,13 +2562,13 @@
      "severity": "major",
      "standard": "Tenant carries commercial general liability insurance of at least 5 million dollars per occurrence (primary plus umbrella), names Landlord and its managing agent as additional insureds, and both parties waive subrogation.",
      "topic": "Tenant's insurance",
-     "why": "The additional insured and mutual waiver terms match the standard, but the CGL limit is redacted in 11.3 and in the Exhibit H Rider, so compliance with the $5 million minimum cannot be confirmed."
+     "why": "The additional insured and mutual waiver terms match the standard. The liability limit is redacted in Section 11.3 and in the Exhibit H Rider, so whether it meets the 5 million dollar minimum cannot be confirmed."
     },
     {
      "dropped_quotes": 0,
      "id": "operating_expenses",
      "kind": "consistent",
-     "lease_says": "Tenant pays Tenant's Share (percentage redacted) of operating expenses above a 2021 base year, with no cap and with gross-up applied to all years.",
+     "lease_says": "Tenant pays its share of Operating Expenses over a 2021 base year, with no cap and with the occupancy gross-up applied equally to the base year and comparison years.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -2550,19 +2591,19 @@
      "reasons": [],
      "sections": [
       "6.2.1(a)",
-      "6.2.1(b)",
-      "6.2.2"
+      "6.2.2",
+      "6.2.1(b)"
      ],
      "severity": "critical",
      "standard": "Tenant pays its proportionate share of increases in operating expenses over a base year, with no cap on controllable expenses.",
      "topic": "Operating expense escalations",
-     "why": "There is no cap and the gross-up applies to the base year and comparison years alike, so this matches the standard. Tenant's Share percentage is redacted. The base excludes extraordinary costs and Permitted Capital Expenditures, which is customary."
+     "why": "There is no cap, and the gross-up is symmetrical, which matches the standard. Tenant's Share is redacted ([***]%), but that does not affect the structure."
     },
     {
      "dropped_quotes": 0,
      "id": "landlord_liability",
      "kind": "consistent",
-     "lease_says": "Recovery against Landlord is limited to its interest in the Land and Building, and Landlord is never liable for consequential damages.",
+     "lease_says": "Recovery is limited to Landlord's interest in the Land and Building, and consequential damages are excluded.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -2579,19 +2620,18 @@
      ],
      "reasons": [],
      "sections": [
-      "14.1(d)",
-      "11.14"
+      "14.1(d)"
      ],
      "severity": "critical",
      "standard": "Landlord's liability is limited to its interest in the building, and Landlord is never liable for consequential damages.",
      "topic": "Limit on Landlord's liability",
-     "why": "This matches the standard."
+     "why": "This matches the standard, and Section 11.14 repeats the consequential damages exclusion."
     },
     {
      "dropped_quotes": 0,
      "id": "default",
      "kind": "consistent",
-     "lease_says": "Rent defaults have 5 days after one notice (and no notice after two late payments in a Lease Year), and other defaults have 30 days, extended only while Tenant diligently pursues a cure.",
+     "lease_says": "Tenant has 5 days after a single notice to cure a monetary default (no notice after two late payments in a Lease Year) and 30 days after notice for other defaults, extended only while it diligently pursues a cure.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -2614,49 +2654,19 @@
      "severity": "critical",
      "standard": "Tenant has about 5 to 10 days after notice to cure a failure to pay rent, and 30 days after notice to cure other defaults, extended only while Tenant diligently pursues a cure.",
      "topic": "Tenant default and cure periods",
-     "why": "The cure periods are within the standard ranges, require a single notice and include a diligence condition."
-    },
-    {
-     "dropped_quotes": 0,
-     "id": "alterations",
-     "kind": "consistent",
-     "lease_says": "Consent is required for all Alterations except purely decorative work up to $50,000 that is not a Material Alteration; Landlord approves contractors (designates them for building-system work); Tenant pays Landlord's out-of-pocket review costs.",
-     "model_status": "consistent",
-     "proposed_response": "",
-     "quotes": [
-      {
-       "at": 89973,
-       "text": "before proceeding with any Alterations, Tenant shall obtain Landlord\u2019s written consent and submit to Landlord for approval plans and specifications for the work to be performed; it being agreed that Landlord shall not unreasonably withhold, condition or delay its consent if the proposed Alteration is not a Material Alteration.",
-       "verified": true
-      },
-      {
-       "at": 91566,
-       "text": "Landlord\u2019s prior written consent shall not be required for any Alterations that are purely decorative or cosmetic Alterations (and that are not otherwise Material Alterations) such as painting, wall coverings and floor coverings and that do not cost in excess of Fifty Thousand and 00/100 Dollars ($50,000.00).",
-       "verified": true
-      }
-     ],
-     "reasons": [],
-     "sections": [
-      "8.1(e)",
-      "8.3(a)",
-      "8.3(d)"
-     ],
-     "severity": "major",
-     "standard": "Tenant needs Landlord's prior consent for all alterations except purely decorative work (painting, carpeting), uses contractors Landlord approves, and pays Landlord's reasonable review costs.",
-     "topic": "Alterations",
-     "why": "This matches the standard: the only consent-free category is decorative work, and consent may be withheld for Material Alterations, which include structural and building-system work. Flag for the partner: under 8.1, plans are deemed approved if Landlord fails to answer within 10 business days plus 5 business days after a second notice."
+     "why": "Both cure periods and the single-notice requirement match the standard."
     },
     {
      "dropped_quotes": 0,
      "id": "taxes",
      "kind": "consistent",
-     "lease_says": "Tenant pays its share of all Taxes, PILOT, Impositions and BID charges from the first dollar, with no base year, except that it pays at PILOT levels if PILOT ends because of Landlord's breach of the Agency Lease.",
+     "lease_says": "Tenant pays its full share of Taxes, or of PILOT and Impositions during the PILOT Term, with no base year deduction; it is held to PILOT-level payments only if the PILOT ends because of Landlord's breach of the Agency Lease.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
        "at": 45287,
-       "text": "an amount (\u201cTenant\u2019s Share of Taxes\u201d) equal to Tenant\u2019s Share of the Taxes applicable to each Tax Year (or portion thereof) occurring during such period",
+       "text": "an amount (\u201cTenant\u2019s Share of Taxes\u201d) equal to Tenant\u2019s Share of the Taxes applicable to each Tax Year (or portion thereof) occurring during such period;",
        "verified": true
       },
       {
@@ -2667,30 +2677,30 @@
      ],
      "reasons": [],
      "sections": [
-      "6.1.2",
+      "6.1.2(i)",
       "6.1.4(b)"
      ],
      "severity": "major",
      "standard": "Tenant pays its proportionate share of increases in real estate taxes over a base tax year.",
      "topic": "Real estate tax escalations",
-     "why": "Paying its share of total taxes rather than increases over a base gives Landlord more than the standard. The only shift to Landlord is the narrow Landlord-breach PILOT protection. Tenant's Share is redacted."
+     "why": "A full pass-through with no base year gives Landlord more than the standard escalation over a base tax year. The only shift to Landlord follows Landlord's own breach. Tenant's Share is redacted."
     },
     {
      "dropped_quotes": 0,
      "id": "holdover",
      "kind": "consistent",
-     "lease_says": "Holdover rent is the greater of 150% of last rent or market for 30 days and 200% after that, and Tenant is liable for damages including lost profits if it stays more than 45 days after expiration.",
+     "lease_says": "Holdover rent is the greater of 150 percent of last rent or market rent for 30 days and 200 percent after that, and Tenant is liable for damages, including lost profits, if it holds over more than 45 days.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
       {
-       "at": 281270,
-       "text": "for the first thirty (30) days of such holding over, the greater of (a) one hundred fifty percent (150%) of the Annual Fixed Rent and any Additional Rent payable hereunder during the last month of the Lease Term",
+       "at": 281266,
+       "text": "(i) for the first thirty (30) days of such holding over, the greater of (a) one hundred fifty percent (150%) of the Annual Fixed Rent and any Additional Rent payable hereunder during the last month of the Lease Term",
        "verified": true
       },
       {
-       "at": 282516,
-       "text": "failure to surrender possession within forty-five (45) days after the Expiration Date, including, without limitation, any claims made by any succeeding tenant and any lost profits",
+       "at": 282501,
+       "text": "resulting from failure to surrender possession within forty-five (45) days after the Expiration Date, including, without limitation, any claims made by any succeeding tenant and any lost profits",
        "verified": true
       }
      ],
@@ -2701,13 +2711,13 @@
      "severity": "major",
      "standard": "If Tenant stays after the term ends, it pays at least 150 percent of the last rent, rising over time, and is liable for Landlord's damages if it stays past a short grace period after notice.",
      "topic": "Holding over",
-     "why": "The holdover rent rises from at least 150%, and damages liability attaches after a short grace period without any notice requirement, which meets or exceeds the standard."
+     "why": "The rent level, the escalation and Tenant's damages exposure after a short grace period match or exceed the standard."
     },
     {
      "dropped_quotes": 0,
      "id": "law_and_jury",
      "kind": "consistent",
-     "lease_says": "New York law governs, and Landlord and Tenant mutually waive a jury trial.",
+     "lease_says": "New York law governs, with exclusive Manhattan venue, and both parties waive a jury trial.",
      "model_status": "consistent",
      "proposed_response": "",
      "quotes": [
@@ -2730,30 +2740,31 @@
      "severity": "minor",
      "standard": "New York law governs, and both parties waive a jury trial.",
      "topic": "Governing law and jury waiver",
-     "why": "This matches the standard. The jury waiver excludes claims for personal injury or property damage, which the partner may want to note."
+     "why": "This matches the standard. The jury waiver carves out claims for personal injury or property damage."
     }
    ],
    "label": "Park Avenue South office building, 2020 (parts redacted)",
    "meta": {
-    "cost_usd": 0.6892,
+    "attempts": 1,
+    "cost_usd": 0.7147,
     "input_tokens": 124964,
-    "latency_s": 75.91,
+    "latency_s": 81.66,
     "model": "claude-opus-5-5",
-    "output_tokens": 9469
+    "output_tokens": 10741
    },
    "parties": {
-    "dated": "December 1, 2020 (Section 1.2 Basic Data; filing caption says dated as of December 7, 2020)",
+    "dated": "December 1, 2020 (filing caption says as of December 7, 2020)",
     "landlord": "345 PAS Holding LLC",
-    "premises": "Portion of the 3rd floor (10,252 RSF per Exhibit H Rider), 345 Park Avenue South, New York, New York",
+    "premises": "Portion of the 3rd floor (stated in Exhibit H as 10,252 rentable square feet), 345 Park Avenue South, New York, New York",
     "tenant": "Protara Therapeutics Inc. (named in the lease as ProTara Therapeutics Inc.)"
    },
    "summary": {
     "check": 1,
-    "consistent": 7,
+    "consistent": 6,
     "critical_issues": 2,
-    "issue": 7,
+    "issue": 8,
     "quotes_dropped": 0,
-    "quotes_verified": 34
+    "quotes_verified": 36
    },
    "url": "https://www.sec.gov/Archives/edgar/data/1359931/000121390021014709/f10k2020ex10-25_protara.htm",
    "words": 55891
