@@ -94,7 +94,7 @@ def apply(playbook: Playbook, review: dict, lease_text: str) -> list[Item]:
                 severity=p.severity,
                 kind=kind,
                 model_status=status,
-                sections=list(row.get("sections", [])),
+                sections=list(dict.fromkeys(row.get("sections", []))),
                 quotes=verified,
                 lease_says=row.get("lease_says", ""),
                 why=row.get("why", ""),

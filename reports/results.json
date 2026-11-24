@@ -831,7 +831,6 @@
      "reasons": [],
      "sections": [
       "52(g)",
-      "52(g)",
       "52(a)(2)"
      ],
      "severity": "critical",
@@ -896,7 +895,6 @@
       "The review marked this call as low confidence."
      ],
      "sections": [
-      "17(1)",
       "17(1)",
       "Notes, Note 12"
      ],
@@ -1073,7 +1071,6 @@
      ],
      "reasons": [],
      "sections": [
-      "48(f)",
       "48(f)"
      ],
      "severity": "major",
